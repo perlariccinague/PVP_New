@@ -1,0 +1,10 @@
+@import "variables";
+
+.search {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  .ce_form .widget-text {
+    display: none;
+  }
+}

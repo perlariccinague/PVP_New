@@ -1,0 +1,6 @@
+<a href="<?= $this->link ?>">
+    <div class="accordion-block">
+        <img src="{{file::<?= $this->icon ?>}}">
+        <div class="accordion-button">Hier mehr Erfahren</div>
+    </div>
+</a>

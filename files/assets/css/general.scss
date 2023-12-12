@@ -1,0 +1,45 @@
+@import "variables";
+
+body {
+  font-family: "Exo 2", sans-serif;
+}
+
+h2 {
+  font: normal normal 200 40px/54px "Exo 2";
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header .inside, .footer-top-blau  {
+  width: 90%;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.application {
+  position: relative;
+  z-index: 20;
+  overflow: visible;
+  margin-top: -145px;
+  .border-raduis {
+    background: #012932;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    border-radius: 50%;
+    border: 20px solid #012932;
+  }
+}
+
+.spacing .application {
+  margin-top: 0;
+}

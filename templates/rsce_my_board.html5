@@ -1,0 +1,38 @@
+<?php
+$chosenColorBg = $this->color;
+$class = '';
+switch($chosenColorBg) {
+    case 'lightgreen':
+        $class = 'bg-green';
+        break;
+    case 'hellblau':
+        $class = 'bg-blau';
+        break;
+}
+?>
+
+<div class="staff-item <?= $class?>" >
+    <?php if($this->color ==='lightgreen'): ?>
+       <!-- <img src="/files/assets/layout/Pfeil-up-green.svg" alt="Pfeil-up">-->
+        <div class="figure">
+            <img src="{{file::<?= $this->image ?>}}" alt="">
+
+            <figcaption>
+                <div class="arrow"><img src="/files/assets/layout/Pfeil-up-blau.svg" alt="Pfeil-up"></div>
+                <?= $this->name ?>
+                <p><?= $this->description ?></p>
+            </figcaption>
+        </div>
+    <?php endif; ?>
+    <?php if($this->color ==='hellblau'): ?>
+        <!--<img src="/files/assets/layout/Pfeil-up-blau.svg"  alt="Pfeil-up">-->
+        <div class="figure">
+            <img src="{{file::<?= $this->image ?>}}" alt="">
+            <figcaption>
+                <div class="arrow"><img src="/files/assets/layout/Pfeil-up-green.svg" alt="Pfeil-up"></div>
+                <?= $this->name ?>
+                <p><?= $this->description ?></p>
+            </figcaption>
+        </div>
+    <?php endif; ?>
+</div>

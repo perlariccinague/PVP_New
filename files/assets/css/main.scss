@@ -1,0 +1,601 @@
+@import "variables";
+
+.header-image {
+  position: relative;
+  z-index: 1;
+  img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+  }
+}
+
+.teaser {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 5;
+  position: relative;
+  overflow: visible;
+  margin-top: -4px;
+/*  a {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .accordion-block {
+      text-align: center;
+      width: 250px;
+      .accordion-button {
+        text-align: center;
+        font: normal normal bold 30px/30px "Exo 2";
+        color: $nordic;
+        text-transform: uppercase;
+        border-top: 2px solid;
+        padding-top: 10px;
+        margin-top: 10px;
+        &:hover {
+          color: $lawngreen;
+        }
+      }
+    }
+  }*/
+ /* .block.dunkelblau, .block.green {
+    width: 80%;
+    margin-top: -85px;
+    color: white;
+    .headline {
+      background: #002B36;
+      border-top-left-radius: 35px;
+      opacity: 0.75;
+      height: 56px;
+      padding: 15px 0;
+    }
+    h2 {
+      font: normal normal 200 40px/54px "Exo 2";
+      text-transform: uppercase;
+      border-bottom: 4px solid $lawngreen;
+      max-width: 800px;
+      padding-bottom: 15px;
+      margin: 0 130px;
+    }
+    .text-bg {
+      background: transparent linear-gradient(253deg, #002B36 0%, #031A20 100%) no-repeat;
+      padding: 75px 0;
+      .text-image {
+        display: flex;
+        max-width: $max-width;
+        margin: 0;
+        justify-content: space-between;
+        .teaser-right {
+          max-width: 800px;
+          margin-left: 130px;
+          p {
+            font: normal normal 200 22px/30px "Exo 2";
+            strong {
+              font-weight: 800;
+            }
+          }
+        }
+        .icon {
+          display: flex;
+          align-items: center;
+          width: 30%;
+          justify-content: center;
+          img {
+            width: 200px;
+          }
+        }
+      }
+    }
+  }*/
+  /*&.accordion-right {
+    a {
+      background: #011317;
+      .accordion-block .accordion-button {
+        color: white;
+        transition: color 250ms;
+        &:hover {
+          color: $lawngreen;
+        }
+      }
+    }
+  }*/
+}
+
+.block.dunkelblau, .block.green {
+  margin-top: -85px;
+  color: white;
+  .wrapper-headline {
+    display: flex;
+    justify-content: space-between;
+    div {
+      width: 20%;
+    }
+    .headline {
+      background: #002B36;
+      border-top-left-radius: 35px;
+      opacity: 0.75;
+      height: 56px;
+      padding: 15px 0;
+      width: 80%;
+      h2 {
+        text-transform: uppercase;
+        border-bottom: 4px solid $lawngreen;
+        max-width: 800px;
+        padding-bottom: 15px;
+        margin: -2px 130px;
+      }
+    }
+  }
+  .text-image.icon-right, .text-image.icon-left {
+    display: flex;
+    justify-content: space-between;
+    a, .without-icon {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .accordion-block {
+        text-align: center;
+        width: 250px;
+        .accordion-button {
+          text-align: center;
+          font: normal normal bold 30px/30px "Exo 2";
+          color: $nordic;
+          text-transform: uppercase;
+          border-top: 2px solid;
+          padding-top: 10px;
+          margin-top: 10px;
+          &:hover {
+            color: $lawngreen;
+          }
+        }
+      }
+    }
+    .teaser-right {
+      background: transparent linear-gradient(253deg, #002B36 0%, #031A20 100%) no-repeat;
+      width: 60%;
+      font: normal normal 200 22px/30px "Exo 2";
+      padding: 75px 0;
+      p {
+        margin: 0 130px;
+        strong {
+          font-weight: 800;
+        }
+      }
+    }
+    .icon {
+      width: 20%;
+      background: #002a34;
+      display: flex;
+      justify-content: left;
+      img {
+        width: 175px;
+      }
+    }
+  }
+}
+
+.teaser .image {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+.block.green {
+  .wrapper-headline {
+    .leer-bg {
+      width: 20%;
+      opacity: 0.75;
+      background: $lawngreen;
+    }
+    .headline, {
+      background: $lawngreen;
+      border-radius: 0 35px 0 0;
+      opacity: 0.75;
+      width: 60%;
+      h2 {
+        color: $nordic;
+        border-color: white
+      }
+    }
+  }
+  .text-image.icon-left {
+    .icon {
+      display: flex;
+      justify-content: right;
+    }
+    .teaser-right, .icon {
+      background: $lawngreen;
+      color: $nordic;
+      .teaser-right {
+        p em {
+          font-weight: 300;
+        }
+      }
+    }
+    a {
+      background: #011317;
+      .accordion-block {
+        .accordion-button {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+#with-bg {
+  .block.green .text-image.icon-left .without-icon {
+    background: #031A20;
+  }
+}
+
+.work {
+  margin: 50px auto 0;
+  z-index: 5;
+  position: relative;
+  .ce_headline {
+    text-align: center;
+    transform: translateY(55px);
+    text-transform: uppercase;
+    border-bottom: 3px solid;
+    max-width: 430px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 35px;
+  }
+  .ce_image {
+    clip-path: $clip-path-contain;
+    background: #012932;
+    .image_container {
+      margin-bottom: 10px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.work.history .ce_headline {
+  transform: translateY(110px);
+  padding-bottom: 7px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.staff-item {
+  position: relative;
+  width: 50%;
+  height: 900px;
+  z-index: 30;
+  /*transition: z-index 5s, height .5s;*/
+  .figure {
+    position: relative;
+    /*transition: height .5s, transform .5s;*/
+    height: 900px;
+    img {
+      width: 100%;
+      height: 900px;
+      object-fit: cover;
+
+    }
+    figcaption {
+      box-sizing: border-box;
+      position: absolute;
+      width: 100%;
+      padding: 0 1rem;
+      overflow: hidden;
+      height: 9%;
+      background: #BCD100;
+      opacity: 0.75;
+      border-radius: 35px 35px 0 0;
+      transition: height .6s ;
+      bottom: 0;
+      cursor: pointer;
+      p {
+        color: $nordic;
+        text-align: center;
+        font: normal normal 400 22px/30px "Exo 2";
+        a {
+          color: white;
+          text-transform: initial;
+          transition: color 250ms;
+          &:hover {
+            color: crimson;
+          }
+        }
+        &:nth-child(2){
+          font: normal normal 800 30px/30px "Exo 2";
+          text-transform: uppercase;
+          transition: font-size 0.5s;
+        }
+        &:nth-child(3) {
+          text-transform: uppercase;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+/*  &:hover {
+    z-index: 50;
+    transition: z-index 0s;
+    height: auto;
+  }*/
+  &.bg-blau {
+    .figure {
+      figcaption {
+        background: #002B36;
+        p {
+          color: $lawngreen;
+        }
+      }
+    }
+  }
+}
+
+.board .staff-item .figure:hover figcaption {
+  height: 40%;
+  transition: transform 0.4s;
+  p {
+    &:nth-child(2){
+      font-size: 40px;
+    }
+  }
+  .arrow img {
+    transform: rotate(180deg);
+  }
+}
+
+.staff-item.bg-green, .staff-item.bg-blau {
+  .figure figcaption {
+    overflow: visible;
+    .arrow {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -40px;
+      height: 60px;
+      width: 100px;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      border-radius: 65px 65px 0 0;
+      background-color: #bcd011;
+      transition: tranform .5s;
+      img {
+        width: 37px;
+        height: 37px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.staff-item.bg-blau .figure figcaption .arrow {
+  background: #032b37;
+}
+
+.history-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  height: 70vh;
+  object-fit: cover;
+  transition: transform 250ms;
+  .history-image, .history-teaser {
+    float: left;
+    width: 50%;
+    position: relative;
+    .ce_text {
+      padding: 25% 100px 50px;
+      color: $nordic;
+      h3 {
+        font: normal normal 700 35px/45px"Exo 2";
+        border-bottom: 2px solid;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+      }
+      p {
+        font: normal normal 200 24px/34px "Exo 2";
+      }
+      a {
+        font: normal normal 600 24px/34px "Exo 2";
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 30px;
+        color: #002B36;
+        transition: all .3s;
+        position: relative;
+        overflow: hidden;
+        border: 2px solid;
+        z-index: 1;
+        .more-button {
+          padding: 0 20px 0 35px;
+          position: relative;
+          &:before {
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 40px;
+            height: 20px;
+            content: "";
+            background: url("/files/assets/layout/arrow-left-short.svg") no-repeat;
+            transition: all .3s;
+          }
+          &:hover {
+            &:before {
+              background: url("/files/assets/layout/arrow-left-short(1).svg") no-repeat;
+            }
+          }
+        }
+        &:after, &:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 100%;
+          border-radius: 30px;
+        }
+        &:after {
+          width: 100%;
+          background-color: transparent;
+          z-index: -2;
+        }
+        &:before {
+          width: 0;
+          background-color: #032b37;
+          transition: all .3s;
+          z-index: -1;
+        }
+        &:hover {
+          color: $lawngreen;
+          &:before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .history-image {
+    height: 100%;
+    clip-path: polygon(68.351% 0%, 68.351% 0%, 68.756% 0.026%, 69.136% 0.103%, 69.49% 0.227%, 69.817% 0.398%, 70.115% 0.612%, 70.383% 0.867%, 70.619% 1.161%, 70.823% 1.491%, 70.993% 1.856%, 71.128% 2.253%, 73.378% 10.525%, 99.936% 10.525%, 99.936% 100%, 0% 100%, 0% 0%);
+    img {
+      width: 100%;
+      transition: transform .5s;
+      height: 100%;
+    }
+  }
+  &:hover {
+    .history-image img {
+      transform: scale(1.3);
+    }
+  }
+}
+
+.history-block.background-green {
+  .history-teaser {
+    clip-path: polygon( 31.519% 0%,31.519% 0%,31.115% 0.026%,30.736% 0.103%,30.383% 0.227%,30.057% 0.398%,29.759% 0.612%,29.492% 0.867%,29.255% 1.161%,29.052% 1.491%,28.882% 1.856%,28.748% 2.253%,26.503% 10.525%,0% 10.525%,0% 100%,99.936% 100%,99.936% 0%,);
+    background-color: $lawngreen;
+  }
+}
+
+.history-block.background-dunkelblau {
+  .history-image {
+    clip-path: polygon(31.519% 0%, 31.519% 0%, 31.115% 0.026%, 30.736% 0.103%, 30.383% 0.227%, 30.057% 0.398%, 29.759% 0.612%, 29.492% 0.867%, 29.255% 1.161%, 29.052% 1.491%, 28.882% 1.856%, 28.748% 2.253%, 26.503% 10.525%, 0% 10.525%, 0% 100%, 99.936% 100%, 99.936% 0%);
+  }
+ .history-teaser {
+   clip-path: polygon( 68.351% 0%,68.351% 0%,68.756% 0.026%,69.136% 0.103%,69.49% 0.227%,69.817% 0.398%,70.115% 0.612%,70.383% 0.867%,70.619% 1.161%,70.823% 1.491%,70.993% 1.856%,71.128% 2.253%,73.378% 10.525%,99.936% 10.525%,99.936% 100%,0% 100%,0% 0%,);
+   background-color: #001D25;
+   .ce_text {
+     color: white;
+     text-align: right;
+     h3 {
+       border-color: $lawngreen;
+     }
+     a {
+       .more-button {
+         &:before {
+           background: url("/files/assets/layout/arrow-left-short(1).svg") no-repeat;
+         }
+         &:hover {
+           &:before {
+             background: url("/files/assets/layout/arrow-left-short.svg") no-repeat;
+           }
+         }
+       }
+       color: $lawngreen;
+       &:before {
+         background-color: $lawngreen;
+       }
+       &:hover {
+         color: $nordic;
+       }
+     }
+   }
+ }
+}
+
+.project-block {
+  position: relative;
+  .ce_headline {
+    text-align: center;
+    transform: translateY(85px);
+    text-transform: uppercase;
+    border-bottom: 3px solid;
+    max-width: 475px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 35px;
+  }
+}
+
+.project {
+  background: #002B36;
+  clip-path: polygon(65.824% 0%, 65.824% 0%, 65.622% 0.029%, 65.432% 0.114%, 65.255% 0.254%, 65.092% 0.444%, 64.943% 0.683%, 64.809% 0.968%, 64.691% 1.296%, 64.589% 1.665%, 64.504% 2.072%, 64.436% 2.515%, 63.311% 11.751%, 36.689% 11.751%, 35.564% 2.515%, 35.564% 2.515%, 35.497% 2.072%, 35.412% 1.665%, 35.31% 1.296%, 35.192% 0.968%, 35.058% 0.683%, 34.909% 0.444%, 34.745% 0.254%, 34.568% 0.114%, 34.378% 0.029%, 34.176% 0%, 0% 0%, 0% 100%, 100% 100%, 100% 0%, 65.824% 0%);
+  padding: 126px 0;
+  position: relative;
+  overflow: visible;
+  .ce_text {
+    font: normal normal 100 22px/30px "Exo 2";
+    color: white;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 50px 0;
+     p strong {
+       font-weight: 600;
+     }
+  }
+}
+
+.infos {
+  width: 90%;
+  max-width: 1120px;
+  z-index: 6;
+  position: relative;
+  margin: -85px auto 0;
+  .ce_text {
+    background: rgba(188, 209, 0, 0.76);
+    border-radius: 30px 30px 0 0;
+    h2 {
+      margin: 0 auto;
+      text-align: center;
+      padding: 15px 0;
+      border-bottom: 3px solid white;
+      max-width: 900px;
+      text-transform: uppercase;
+    }
+  }
+  .project-infos-block {
+    background: $lawngreen;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .project-infos {
+      padding: 100px 0;
+      width: 23%;
+      .project-teaser {
+        text-align: center;
+        font: normal normal 200 22px/30px "Exo 2";
+        h3 {
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+        p {
+          line-height: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+

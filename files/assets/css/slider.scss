@@ -1,0 +1,205 @@
+@import "variables";
+
+.galery {
+  .ce_sliderStart {
+    position: relative;
+    .content-slider {
+      .ce_image {
+        img {
+          width: 100%;
+        }
+        .caption-block {
+          position: absolute;
+          bottom: 0;
+          text-align: center;
+          left: 50%;
+          color: white;
+          font: normal normal normal 20px/30px "Exo 2";
+          transform: translateX(-50%);
+          height: 115px;
+          width: 100%;
+          background: #002B36;
+          opacity: 0.75;
+          .caption {
+            border-bottom: 4px solid white;
+            padding-bottom: 12px;
+            max-width: 860px;
+            margin: 15px auto;
+          }
+        }
+      }
+    }
+    .slider-control {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      .slider-prev {
+        left: 15%;
+      }
+      .slider-next{
+        right: 15%;
+      }
+      .slider-prev, .slider-next {
+        transform: translateY(-25vw);
+        transition: filter   250ms;
+        img {
+          width: 85px;
+        }
+        &:hover {
+          filter: brightness(0) saturate(100%) invert(73%) sepia(61%) saturate(2380%) hue-rotate(22deg) brightness(104%) contrast(100%)
+        }
+      }
+      .slider-menu {
+        transform: translateY(-15px);
+        b {
+          cursor: pointer;
+          font-size: 0;
+          display: inline-table;
+          background-color: transparent;
+          width: 18px;
+          height: 18px;
+          border: 2px solid white;
+          margin: 0 5px;
+          border-radius: 50%;
+          &.active {
+            background: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+#katar.galery .ce_sliderStart .slider-control .slider-menu {
+  display: none;
+}
+
+
+.slider {
+  position: relative;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: $lawngreen;
+  height: 1130px;
+  margin: auto;
+  clip-path: $clip-path-contain;
+  img {
+    width: 540px;
+    height: 355px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    border-radius: 20px;
+  }
+
+  .caption {
+    color: #002B36;
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px solid #002B36;
+    padding-bottom: 10px;
+    max-width: 860px;
+    margin: 30px auto;
+    left: 50%;
+    transform: translateX(-50%);
+    font: normal normal 400 20px/30px "Exo 2";
+  }
+  .description {
+    color: $nordic;
+    padding: 30px;
+    position: absolute;
+    font: normal normal normal 24px/30px "Exo 2";
+    max-width: 400px;
+    border-radius: 30px;
+    border: 6px solid $nordic;
+    left: 50%;
+    top: 25%;
+    z-index: 10;
+    background: $lawngreen;
+    &:before, &:after {
+      position: absolute;
+      content: "";
+      width: 100px;
+      height: 85px;
+      background: $lawngreen url("/files/assets/layout/Pfad 218.svg") no-repeat center/50%;
+      box-sizing: border-box;
+    }
+    &:before {
+      left: -50px;
+      top: -40px
+    }
+    &:after {
+      right: -50px;
+      bottom: -45px;
+    }
+  }
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  img {
+    width: 80px;
+  }
+  &:hover {
+    filter: invert(1);
+  }
+}
+
+.next {
+  right: 5%;
+}
+.prev {
+  left: 5%;
+}
+
+/* The dots/bullets/indicators */
+.slider-menu-new {
+  text-align: center;
+  position: absolute;
+  bottom: 140px;
+  transform: translateX(-50%);
+  left: 50%;
+  .dot {
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin: 0 2px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid $nordic;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: $nordic;
+  }
+}
+
+
+/*
+!* Fading animation *!
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}*/

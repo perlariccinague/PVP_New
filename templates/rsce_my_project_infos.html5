@@ -1,0 +1,7 @@
+<div class="project-infos">
+    <div class="project-teaser">
+        <img src="{{file::<?= $this->icon ?>}}" alt="">
+        <h3><?= $this->titel ?></h3>
+        <p><?= $this->description ?></p>
+    </div>
+</div>

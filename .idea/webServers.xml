@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d687c769-0cd5-4511-a4bb-7cf4bef222b3" name="server" url="http://ftp.pvptriptis.com">
+        <fileTransfer rootFolder="/cto413new" host="ftp.pvptriptis.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,42 @@
+<?php
+$chosenColor = $this->color;
+$classBgColor = '';
+switch($chosenColor) {
+    case 'green':
+        $classBgColor = 'background-green';
+        break;
+    case 'dunkelblau':
+        $classBgColor = 'background-dunkelblau';
+        break;
+}
+?>
+
+<div class="history-block <?= $classBgColor?>">
+    <?php if($this->color ==='green'): ?>
+    <div class="history-image">
+        <img src="{{file::<?= $this->image ?>}}" alt="">
+    </div>
+    <div class="history-teaser">
+        <div class="ce_text">
+            <img src="{{file::<?= $this->icon ?>}}" alt="">
+            <h3><?= $this->titel ?></h3>
+            <p><?= $this->description ?></p>
+            <a href="<?= $this->link ?>"><div class="more-button">Weiterlesen</div></a>
+        </div>
+
+    </div>
+    <?php endif; ?>
+    <?php if($this->color ==='dunkelblau'): ?>
+        <div class="history-teaser">
+            <div class="ce_text">
+                <img src="{{file::<?= $this->icon ?>}}" alt="">
+                <h3><?= $this->titel ?></h3>
+                <p><?= $this->description ?></p>
+                <a href="<?= $this->link ?>"><div class="more-button">Weiterlesen</div></a>
+            </div>
+        </div>
+        <div class="history-image">
+            <img src="{{file::<?= $this->image ?>}}" alt="">
+        </div>
+    <?php endif; ?>
+</div>

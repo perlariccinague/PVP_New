@@ -1,0 +1,87 @@
+<?php
+$chosenColor = $this->color;
+$classColor = '';
+switch($chosenColor) {
+    case 'dunkelblau':
+        $classColor = 'dunkelblau';
+        break;
+    case 'green':
+        $classColor = 'green';
+        break;
+}
+
+$chosenPosition = $this->position;
+$class = '';
+switch($chosenPosition) {
+    case 'right':
+        $class = 'icon-right';
+        break;
+    case 'left':
+        $class = 'icon-left';
+        break;
+
+}
+?>
+
+<div class="block <?= $classColor ?>">
+    <?php if($this->color ==='dunkelblau'): ?>
+        <div class="wrapper-headline"">
+            <div></div>
+            <div class="ce_text headline block">
+                <h2><?= $this->headline ?></h2>
+            </div>
+        </div>
+        <div class="text-bg">
+            <div class="text-image <?= $class ?>">
+                <?php if($this->position ==='right'): ?>
+                    <div class="ce_text teaser-right block">
+                        <p><?= $this->description ?></p>
+                    </div>
+                    <div class="icon">
+                        <img src="{{file::<?= $this->icon ?>}}"  alt="">
+                    </div>
+                <?php ?>
+               <?php /*if($this->position ==='left'): */?>
+                    <div class="icon">
+                        <img src="{{file::<?/*= $this->icon */?>}}"  alt="">
+                    </div>
+                    <div class="ce_text teaser-right block">
+                        <p><?/*= $this->description */?></p>
+                    </div>
+                <?php endif; ?>
+
+            </div>
+        </div>
+    <?php endif; ?>
+    <?php if($this->color ==='green'): ?>
+        <div class="wrapper-headline">
+            <div class="leer-bg"></div>
+            <div class="ce_text headline block">
+                <h2><?= $this->headline ?></h2>
+            </div>
+            <div></div>
+        </div>
+        <div class="text-bg">
+            <div class="text-image <?= $class ?>">
+              <!--  <?php /*if($this->position ==='right'): */?>
+                    <div class="ce_text teaser-right block">
+                        <p><?/*= $this->description */?></p>
+                    </div>
+                    <div class="icon">
+                        <img src="{{file::<?/*= $this->icon */?>}}"  alt="">
+                    </div>
+                --><?php /*endif; */?>
+                <?php /*if($this->position ==='left'): */?><!--
+                    <div class="icon">
+                        <img src="{{file::<?/*= $this->icon */?>}}"  alt="">
+                    </div>
+                    <div class="ce_text teaser-right block">
+                        <p><?/*= $this->description */?></p>
+                    </div>
+                --><?php /*endif; */?>
+            </div>
+        </div>
+    <?php endif; ?>
+</div>
+
+

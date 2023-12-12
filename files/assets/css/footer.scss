@@ -1,0 +1,121 @@
+@import "variables";
+
+#footer {
+  clip-path: $clip-path-contain;
+  background: $footerBg;
+  /*padding: 50px 0;*/
+  z-index: 8;
+  position: relative;
+ /* clip-path: $clip-path-footer;*/
+  padding-bottom: 50px;
+  .footer-bottom-wrapper {
+    position: relative;
+    .footer-bg {
+      width: 90%;
+      height: 100%;
+      position: absolute;
+      background: $lawngreen;
+      clip-path: $clip-path;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .footer {
+      z-index: 1;
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      .footer-top {
+        display: flex;
+        justify-content: space-around;
+        padding: 80px 0;
+        img {
+          width: 500px;
+        }
+        .ce_text {
+          font: normal normal 300 20px/26px "Exo 2";
+          color: white;
+          border-left: 2px solid;
+          padding-left: 15px;
+          text-transform: uppercase;
+          text-align: left;
+          p {
+            a {
+              color: white;
+              transition: color 250ms;
+              &:hover {
+                color: $nordic;
+              }
+            }
+          }
+        }
+      }
+      .footer-middle {
+        margin-bottom: 80px;
+        .mod_customnav ul {
+          display: flex;
+          justify-content: space-between;
+          font: normal normal 500 22px/26px "Exo 2";
+          text-transform: uppercase;
+          li {
+            padding-right: 15px;
+            margin-right: 20px;
+            &:not(:last-child) {
+              border-right: 2px solid white;
+            }
+            a, strong {
+              color: white;
+              transition: color 250ms;
+              &:hover {
+                color: $nordic;
+              }
+            }
+          }
+        }
+      }
+      .footer-bottom {
+        text-align: center;
+        .image_container {
+          margin-bottom: -4px;
+          img {
+            width: 665px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#footer .footer-top-blau {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  text-transform: uppercase;
+  .footer-left, .footer-right {
+    .ce_text {
+      font: normal normal 600 40px/54px "Exo 2";
+    }
+  }
+}
+
+#footer  {
+   .footer-teaser {
+     padding: 110px 0 50px;
+     .ce_text {
+       text-align: center;
+       font: italic normal 300 26px/32px "Exo 2";
+       max-width: 800px;
+       margin: 0 auto;
+       color: white;
+      /* padding: 70px 0 50px;*/
+     }
+   }
+  .border-raduis {
+    position: absolute;
+    top: -126px;
+    transform: translateX(-50%);
+    left: 50%;
+    border-radius: 50%;
+    border: 20px solid #012932;
+  }
+}
+
