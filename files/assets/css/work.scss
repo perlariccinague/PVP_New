@@ -1,0 +1,115 @@
+@import "variables";
+
+.block.work-bg-new, .block.work-bg {
+  margin-top: -85px;
+  color: $nordic;
+  .wrapper-headline {
+    display: flex;
+    justify-content: space-between;
+    .test {
+      width: 20%;
+    }
+    .ce_text.headline.block {
+      background: rgba(188, 209, 0, 0.75);
+      border-top-left-radius: 35px;
+      height: 56px;
+      padding: 15px 0;
+      width: 80%;
+      h2 {
+        text-transform: uppercase;
+        border-bottom: 4px solid white;
+        width: 60%;
+        padding-bottom: 15px;
+        margin: -2px 130px;
+      }
+    }
+  }
+  .text-image {
+    display: flex;
+    justify-content: space-between;
+    & div {
+      width: 20%;
+    }
+    .work-teaser-bg {
+      width: 80%;
+      padding: 80px 0 150px;
+      background: $lawngreen;
+      .ce_text.teaser-right.block {
+        width: 60%;
+        margin: 0 130px;
+        font: normal normal 200 22px/30px "Exo 2";
+        p {
+          strong {
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+    a{
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .accordion-block {
+        text-align: center;
+        width: 250px;
+        .accordion-button {
+          width: auto;
+          text-align: center;
+          font: normal normal bold 30px/30px "Exo 2";
+          color: #002B36;
+          text-transform: uppercase;
+          border-top: 3px solid;
+          padding-top: 10px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.block.work-bg {
+  width: 100%;
+  color: white;
+  .wrapper-headline {
+    .leer {
+      background: rgba(0, 43, 54, 0.75);
+      width: 20%;
+    }
+    .ce_text.headline.block {
+      background: rgba(0, 43, 54, 0.75);
+      width: 60%;
+      border-radius: 0 35px 0 0;
+      h2 {
+        width: 80%;
+      }
+    }
+    & > div {
+      width: 20%;
+    }
+  }
+  .text-image {
+    .leer {
+      background: $nordic;
+    }
+   .work-teaser-bg {
+     width: 60%;
+     background: $nordic;
+     ul {
+       li {
+         list-style: disc inside;
+       }
+     }
+   }
+    .icon-block {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .icon {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<div class="benefits" >
+    <div class="benefits-box">
+        <div class="content">
+            <img src="{{file::<?= $this->icon ?>}}">
+           <!-- <h3><?/*= $this->text  */?></h3>-->
+        </div>
+        <div class="content-hover">
+            <h3><?= $this->description ?></h3>
+        </div>
+    </div>
+</div>
+

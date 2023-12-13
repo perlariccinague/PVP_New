@@ -18,89 +18,6 @@
   position: relative;
   overflow: visible;
   margin-top: -4px;
-/*  a {
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .accordion-block {
-      text-align: center;
-      width: 250px;
-      .accordion-button {
-        text-align: center;
-        font: normal normal bold 30px/30px "Exo 2";
-        color: $nordic;
-        text-transform: uppercase;
-        border-top: 2px solid;
-        padding-top: 10px;
-        margin-top: 10px;
-        &:hover {
-          color: $lawngreen;
-        }
-      }
-    }
-  }*/
- /* .block.dunkelblau, .block.green {
-    width: 80%;
-    margin-top: -85px;
-    color: white;
-    .headline {
-      background: #002B36;
-      border-top-left-radius: 35px;
-      opacity: 0.75;
-      height: 56px;
-      padding: 15px 0;
-    }
-    h2 {
-      font: normal normal 200 40px/54px "Exo 2";
-      text-transform: uppercase;
-      border-bottom: 4px solid $lawngreen;
-      max-width: 800px;
-      padding-bottom: 15px;
-      margin: 0 130px;
-    }
-    .text-bg {
-      background: transparent linear-gradient(253deg, #002B36 0%, #031A20 100%) no-repeat;
-      padding: 75px 0;
-      .text-image {
-        display: flex;
-        max-width: $max-width;
-        margin: 0;
-        justify-content: space-between;
-        .teaser-right {
-          max-width: 800px;
-          margin-left: 130px;
-          p {
-            font: normal normal 200 22px/30px "Exo 2";
-            strong {
-              font-weight: 800;
-            }
-          }
-        }
-        .icon {
-          display: flex;
-          align-items: center;
-          width: 30%;
-          justify-content: center;
-          img {
-            width: 200px;
-          }
-        }
-      }
-    }
-  }*/
-  /*&.accordion-right {
-    a {
-      background: #011317;
-      .accordion-block .accordion-button {
-        color: white;
-        transition: color 250ms;
-        &:hover {
-          color: $lawngreen;
-        }
-      }
-    }
-  }*/
 }
 
 .block.dunkelblau, .block.green {
@@ -144,7 +61,7 @@
           font: normal normal bold 30px/30px "Exo 2";
           color: $nordic;
           text-transform: uppercase;
-          border-top: 2px solid;
+          border-top: 3px solid;
           padding-top: 10px;
           margin-top: 10px;
           &:hover {
@@ -537,6 +454,13 @@
     font-size: 35px;
   }
 }
+
+#benefit.project-block .ce_headline {
+  transform: translateY(60px);
+  padding-bottom: 10px;
+  font: normal normal 700 50px/52px "Exo 2";
+}
+
 
 .project {
   background: #002B36;

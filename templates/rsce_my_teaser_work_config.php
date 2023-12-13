@@ -1,6 +1,6 @@
 <?php
 return array(
-    'label' => array('Teaser Block', 'Meine Beschreibung...'),
+    'label' => array('Arbeiten bei PVP', 'Meine Beschreibung...'),
     'types' => array('content', 'module'),
     'contentCategory' => 'texts',
     'moduleCategory' => 'miscellaneous',
@@ -37,6 +37,10 @@ return array(
             'eval' => array('filesOnly' => true),
             'inputType' => 'fileTree'
         ),
-
+        'icon' => array(
+            'label' => array('Icon', 'Beschreibung...'),
+            'eval' => array('filesOnly' => true),
+            'inputType' => 'fileTree'
+        ),
     )
 );
