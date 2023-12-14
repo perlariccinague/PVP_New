@@ -13,8 +13,15 @@
   }
 }
 
-#header .inside .mod_article {
+.start #header .inside .mod_article {
   height: 400px;
+  .header-contain .header-right-bg {
+    transform: translateX(calc(-100% + -25px));
+  }
+}
+
+#header .inside .mod_article {
+  height: 318px;
   width: 90%;
   position: relative;
   overflow: visible;
@@ -93,7 +100,7 @@
       height: 290px;
       width: 341px;
       padding: 20px 30px;
-      transform: translateX(calc(-100% + -25px));
+      transform: translateX(calc(-100% + -10px));
       transition: left 500ms, transform 200ms;
       .header-right {
         .header-logo {

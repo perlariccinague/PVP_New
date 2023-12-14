@@ -18,7 +18,7 @@ a {
   text-decoration: none;
 }
 
-#header .inside, .footer-top-blau  {
+#header .inside, .footer-top-blau, .privacy  {
   width: 90%;
   max-width: $max-width;
   margin: 0 auto;
@@ -37,9 +37,56 @@ a {
     left: 50%;
     border-radius: 50%;
     border: 20px solid #012932;
+     img {
+      transition: filter 250ms;
+      &:hover {
+        filter:  brightness(0) invert(81%) sepia(69%) saturate(1452%) hue-rotate(12deg) brightness(90%);
+      }
+    }
   }
 }
 
 .spacing .application {
   margin-top: 0;
+}
+
+.teaser .ce_accordionStart.ce_accordion .accordion.ui-accordion-content p,
+.privacy .widget-submit {
+    a, .submit  {
+      font: normal normal 600 22px/27px "Exo 2";
+      text-transform: uppercase;
+      display: initial;
+      padding: 10px 30px;
+      border-radius: 30px;
+      color: #002B36;
+      transition: all .3s;
+      position: relative;
+      border: 2px solid;
+      z-index: 1;
+      &:after {
+        width: 100%;
+        background-color: transparent;
+        z-index: -2;
+      }
+      &:before {
+        width: 0;
+        background-color: #032b37;
+        transition: all .3s;
+        z-index: -1;
+      }
+      &:after, &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        border-radius: 30px;
+      }
+      &:hover {
+        color: $lawngreen;
+        &:before {
+          width: 100%;
+        }
+      }
+    }
 }

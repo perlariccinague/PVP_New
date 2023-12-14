@@ -181,6 +181,10 @@
   padding-bottom: 7px;
 }
 
+#slider-headline.work .ce_headline {
+  transform: translateY(80px);
+}
+
 .board {
   display: flex;
   flex-wrap: wrap;
@@ -192,10 +196,9 @@
   width: 50%;
   height: 900px;
   z-index: 30;
-  /*transition: z-index 5s, height .5s;*/
   .figure {
     position: relative;
-    /*transition: height .5s, transform .5s;*/
+
     height: 900px;
     img {
       width: 100%;
@@ -221,7 +224,6 @@
         text-align: center;
         font: normal normal 400 22px/30px "Exo 2";
         a {
-          color: white;
           text-transform: initial;
           transition: color 250ms;
           &:hover {
@@ -231,7 +233,7 @@
         &:nth-child(2){
           font: normal normal 800 30px/30px "Exo 2";
           text-transform: uppercase;
-          transition: font-size 0.5s;
+          transition: font-size .6s;
         }
         &:nth-child(3) {
           text-transform: uppercase;
@@ -240,11 +242,6 @@
       }
     }
   }
-/*  &:hover {
-    z-index: 50;
-    transition: z-index 0s;
-    height: auto;
-  }*/
   &.bg-blau {
     .figure {
       figcaption {
@@ -259,7 +256,6 @@
 
 .board .staff-item .figure:hover figcaption {
   height: 40%;
-  transition: transform 0.4s;
   p {
     &:nth-child(2){
       font-size: 40px;
@@ -520,6 +516,33 @@
     }
   }
 }
+
+.privacy, .news {
+  margin: 50px auto;
+  position: relative;
+  z-index: 3;
+  max-width: 1100px;
+  h2 {
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 2px solid $lawngreen;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    color: #032f3c;
+  }
+  p {
+    font: normal normal 300 22px/30px "Exo 2";
+    a {
+      color: $nordic;
+      transition: color 250ms;
+      &:hover {
+        color: $lawngreen;
+      }
+    }
+  }
+}
+
 
 
 

@@ -42,7 +42,7 @@ return array(
             'eval' => array('filesOnly' => true),
             'inputType' => 'fileTree'
         ),
-        'accordion_headline' => array(
+      /*  'accordion_headline' => array(
             'label' => array('Akkordion Überschrift'),
             'inputType' => 'text',
         ),
@@ -50,6 +50,21 @@ return array(
             'label' => array('Akkordion Content'),
             'eval' => array('rte' => 'tinyMCE'),
             'inputType' => 'textarea',
-        ),
+        ),*/
+        'accordion' => array(
+            'inputType' => 'list',
+            'label' => array('Akkordion', 'Rechts auf "Neues Element" klicken'),
+            'fields' => array(
+                'accordion_headline' => array(
+                    'label' => array('Akkordion Überschrift'),
+                    'inputType' => 'text',
+                ),
+                'accordion_teaser' => array(
+                    'label' => array('Akkordion Content'),
+                    'eval' => array('rte' => 'tinyMCE'),
+                    'inputType' => 'textarea',
+                ),
+            )
+        )
     )
 );

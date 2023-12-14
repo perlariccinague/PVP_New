@@ -8,3 +8,133 @@
     display: none;
   }
 }
+
+.search-result  {
+  margin: 50px auto;
+  width: 90%;
+  max-width: 1100px;
+  z-index: 3;
+  position: relative;
+  .widget-text input, .widget-submit .submit {
+    width: 100%;
+    padding: 10px 12px;
+    font: normal normal 400 22px/30px "Exo 2";
+    border: 2px solid #022c36;
+    border-radius: 30px;
+    outline: 0;
+    &:hover {
+      border-color: $lawngreen;
+    }
+  }
+  .widget-submit {
+    margin: 10px 0;
+    .submit {
+      position: relative;
+      padding: 10px 55px;
+      color: $nordic;
+      text-align: left;
+      cursor: pointer;
+      border: 2px solid #022c36;
+      border-radius: 30px;
+      background: transparent;
+      transition: filter 250ms;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 15px;
+        width: 30px;
+        height: 25px;
+        background: url("/files/assets/layout/suche.svg") no-repeat;
+      }
+    }
+  }
+  .header {
+    margin: 20px auto;
+  }
+  .mod_search div.even, .mod_search div.odd {
+    background-color: $nordic;
+    color: white;
+    padding: 15px 20px 50px 20px;
+    margin-bottom: 20px;
+    font: normal normal 200 22px/30px "Exo 2";
+    h3 {
+      text-transform: uppercase;
+      a {
+        color: white;
+        transition: color 250ms;
+        &:hover {
+          color: $lawngreen;
+        }
+      }
+    }
+    .url {
+      display: none;
+    }
+  }
+}
+
+.privacy .ce_form {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.privacy .formbody .widget-text,
+.privacy .formbody .widget-textarea {
+  line-height: 1.5em;
+  padding-bottom: 20px;
+  label {
+    margin-bottom: 7px;
+    font: normal normal 400 22px/30px "Exo 2";
+    span {
+      color: $nordic;
+    }
+  }
+  input, textarea {
+    border: 2px solid $nordic;
+    cursor: pointer;
+    width: 95%;
+    padding: 6px 10px ;
+    outline: none;
+    font: normal normal 400 22px/30px "Exo 2";
+    display: block;
+    border-radius: 30px;
+    transition: background-color 250ms;
+    &:hover {
+      border:2px solid $lawngreen;
+    }
+  }
+}
+
+.privacy .formbody .widget-radio fieldset,
+.privacy .formbody .widget-checkbox fieldset {
+  border: none;
+  span {
+    margin-left: -15px;
+    label a {
+      color: $nordic;
+      transition: color 250ms;
+      &:hover {
+        color: $nordic;
+      }
+    }
+  }
+}
+
+.privacy .formbody .explanation {
+  font-style: italic;
+  font-size: 17px;
+  margin-top: 0;
+}
+
+.privacy .widget-submit {
+  .submit {
+    outline: none;
+    background: transparent;
+    font: normal normal 600 22px/27px "Exo 2";
+    transition: border 250ms;
+    &:hover {
+      border: 2px solid transparent;
+    }
+  }
+}
