@@ -66,6 +66,15 @@ switch($chosenColor) {
            <!-- <div></div>-->
         </div>
     <?php endif; ?>
+    <section class="ce_accordionStart ce_accordion block">
+        <div class="toggler ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"><?= $this->accordion_headline ?></span>
+           </div>
+        <div class="accordion ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" style="display: none;" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="true">
+            <div class="accordion-teaser">
+                <p><?= $this->accordion_teaser ?></p>
+            </div>
+        </div>
+    </section>
 </div>
 
 
