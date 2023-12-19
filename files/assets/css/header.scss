@@ -140,4 +140,95 @@
   }
 }
 
+@media screen and (max-width: 860px) {
+  #header {
+    overflow-x: hidden;
+    .inside {
+      width: 100%;
+      display: block;
+      .mod_article {
+        width: 100%;
+        .header-bg {
+          width: 100%;
+          left: 20px;
+          transform: translateX(0%) skewX(12deg);
+          border-bottom-left-radius: 20px;
+        }
+        .header-contain {
+          .header-right-bg {
+            transform: translateX(-0%) skewX(15deg);
+            width: 210px;
+            left: initial;
+            padding: 0;
+            height: 154px;
+            border-bottom-left-radius: 20px;
+            background: white;
+            right: -30px;
+            .header-right .header-logo {
+              margin: 0;
+              padding: 0;
+              transform: translateY(50%);
+              img {
+                width: 130px;
+              }
+            }
+          }
+          .header-left {
+            padding-left: 20px;
+            width: 58%;
+            .mod_customnav {
+              border-bottom: 2px solid white;
+              padding-bottom: 10px;
+              ul {
+                width: 180px;
+                li {
+                  font: normal normal 400 14px/17px "Exo 2";
+                }
+              }
+            }
+            .ce_text {
+              max-width: 200px;
+              padding-left: 25px;
+              h2 {
+                font: normal normal 400 22px/26px "Exo 2";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
+  .search {
+    bottom: 30px;
+    .widget.widget-submit input {
+      width: 25px;
+    }
+  }
+  .start #header .inside .mod_article {
+    height: 230px;
+  }
+
+  .start #header .inside .mod_article .header-contain .header-right-bg {
+    transform: translateX(0%) skewX(15deg);
+  }
+
+  .mod_mobile_menu.block {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    .mobile_menu_trigger {
+      img {
+        width: 50px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 450px)  {
+  #header .inside .mod_article .header-contain .header-right-bg {
+    width: 150px;
+    right: -25px;
+  }
+}

@@ -39,7 +39,8 @@
       h2 {
         text-transform: uppercase;
         border-bottom: 4px solid $lawngreen;
-        max-width: 800px;
+        /*max-width: 800px;*/
+        width: 60%;
         padding-bottom: 15px;
         margin: -2px 130px;
       }
@@ -48,6 +49,7 @@
   .text-image.icon-right, .text-image.icon-left {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     a, .without-icon {
       width: 20%;
       display: flex;
@@ -71,7 +73,8 @@
       }
     }
     .teaser-right {
-      background: transparent linear-gradient(253deg, #002B36 0%, #031A20 100%) no-repeat;
+      /*background: transparent linear-gradient(253deg, #002B36 0%, #031A20 100%) no-repeat;*/
+      background: $nordic;
       width: 60%;
       font: normal normal 200 22px/30px "Exo 2";
       padding: 75px 0;
@@ -84,7 +87,7 @@
     }
     .icon {
       width: 20%;
-      background: #002a34;
+      background: $nordic;
       display: flex;
       justify-content: left;
       img {
@@ -115,7 +118,8 @@
       width: 60%;
       h2 {
         color: $nordic;
-        border-color: white
+        border-color: white;
+        width: 80%;
       }
     }
   }
