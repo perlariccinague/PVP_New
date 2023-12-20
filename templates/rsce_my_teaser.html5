@@ -25,7 +25,7 @@ switch($chosenPosition) {
 
 <div class="block <?= $classColor ?>">
     <?php if($this->color ==='dunkelblau'): ?>
-        <div class="wrapper-headline"">
+        <div class="wrapper-headline">
             <div></div>
             <div class="ce_text headline block">
                 <h2><?= $this->headline ?></h2>

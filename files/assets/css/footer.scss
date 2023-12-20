@@ -26,8 +26,23 @@
         display: flex;
         justify-content: space-around;
         padding: 80px 0;
+        align-items: center;
+        flex-wrap: wrap;
         img {
-          width: 500px;
+          width: 240px;
+        }
+        .footer-left {
+          display: flex;
+          width: 68%;
+          justify-content: space-around;
+          align-items: center;
+          flex-wrap: wrap;
+          img {
+            width: 200px;
+          }
+         .footer-logo img {
+           width: 270px;
+         }
         }
         .ce_text {
           font: normal normal 300 20px/26px "Exo 2";
@@ -106,5 +121,100 @@
        color: white;
      }
    }
+}
+
+@media screen and (max-width: 860px) {
+  #footer {
+    clip-path: polygon(99.861% 99.905%,0.139% 99.905%,0.139% 0.036%,18.115% 0.036%,18.115% 0.036%,18.349% 0.037%,18.58% 0.043%,18.809% 0.052%,19.035% 0.066%,19.256% 0.084%,19.471% 0.105%,19.681% 0.131%,19.884% 0.16%,20.08% 0.193%,20.267% 0.23%,20.267% 0.23%,20.443% 0.272%,20.608% 0.317%,20.762% 0.364%,
+                       20.905% 0.414%,21.036% 0.465%,21.155% 0.519%,21.262% 0.574%,21.355% 0.632%,21.436% 0.69%,21.503% 0.75%,24.25% 3.372%,75.75% 3.372%,78.496% 0.75%,78.496% 0.75%,78.563% 0.69%,78.644% 0.632%,78.738% 0.574%,78.844% 0.519%,78.963% 0.465%,79.095% 0.414%,79.237% 0.364%,
+                       79.392% 0.317%,79.557% 0.272%,79.733% 0.23%,79.733% 0.23%,79.92% 0.193%,80.115% 0.16%,80.318% 0.131%,80.528% 0.105%,80.744% 0.084%,80.965% 0.066%,81.19% 0.052%,81.419% 0.043%,81.651% 0.037%,81.884% 0.036%,99.862% 0.036%,99.862% 99.905%,99.861% 99.905%);
+    .footer-top-blau {
+      display: block;
+      .footer-left, .footer-right {
+        .ce_text {
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+      .footer-left {
+        padding-top: 70px;
+      }
+      .footer-right {
+        margin-top: -55px;
+      }
+    }
+    .footer-teaser {
+      padding-top: 0;
+      .ce_text {
+        font: italic normal 300 20px/28px "Exo 2";
+      }
+    }
+    .footer-bottom-wrapper .footer .footer-top {
+      text-align: center;
+      padding: 40px 0;
+      .footer-left {
+        width: 100%;
+        display: block;
+        img {
+          width: 130px;
+        }
+        .footer-logo {
+          margin: 30px 0 20px 40px;
+          img {
+            width: 170px;
+          }
+        }
+      }
+      .ce_text {
+        text-align: center;
+        border-left: none;
+        font: normal normal 300 18px/24px "Exo 2";
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        padding: 5px 0;
+      }
+    }
+    .footer-bottom-wrapper .footer .footer-middle {
+      .mod_customnav ul {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        li {
+          padding-right: 0;
+          margin-right: 0;
+          padding-bottom: 14px;
+          margin-bottom: 10px;
+          &:not(:last-child) {
+            border-right: 0;
+            a {
+              position: relative;
+              &:after {
+                content: "";
+                position: absolute;
+                bottom: -12px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 30%;
+                height: 2px;
+                background-color: #fff;
+              }
+            }
+         }
+        }
+      }
+    }
+    .footer-bottom-wrapper .footer-bg {
+      clip-path: polygon(100% 0%,90.935% 93.096%,90.935% 93.096%,90.932% 93.287%,90.853% 93.808%,90.598% 94.574%,90.064% 95.505%,89.148% 96.518%,87.75% 97.531%,85.767% 98.462%,83.097% 99.228%,79.639% 99.749%,75.289% 99.94%,24.716% 99.94%,24.716% 99.94%,20.649% 99.749%,17.354% 99.228%,14.749% 98.462%,12.755% 97.531%,11.289% 96.518%,10.272% 95.505%,9.622% 94.574%,9.258% 93.808%,9.098% 93.287%,9.063% 93.096%,0% 0%,100% 0%);
+     /* width: 328px;*/
+    }
+    .footer-bottom-wrapper .footer .footer-bottom {
+      /*display: none;*/
+      position: relative;
+      bottom: 0;
+      .image_container img {
+        width: 220px;
+      }
+    }
+  }
 }
 

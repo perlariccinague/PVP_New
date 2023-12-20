@@ -90,3 +90,15 @@ a {
       }
     }
 }
+
+@media screen and (max-width: 860px) {
+  .application {
+    margin-top: -50px;
+    .border-raduis {
+      border: 8px solid #012932;
+      img {
+        width: 70px;
+      }
+    }
+  }
+}

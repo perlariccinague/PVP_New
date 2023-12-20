@@ -26,6 +26,7 @@
   .wrapper-headline {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     div {
       width: 20%;
     }
@@ -172,7 +173,7 @@
     clip-path: $clip-path-contain;
     background: #012932;
     .image_container {
-      margin-bottom: 10px;
+     /* margin-bottom: 10px;*/
       img {
         width: 100%;
       }
@@ -544,6 +545,97 @@
         color: $lawngreen;
       }
     }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .work {
+    .ce_headline {
+      font-size: 20px;
+      max-width: max-content;
+      padding-bottom: 0;
+      transform: translateY(37px);
+    }
+    .ce_image {
+      background: transparent;
+      .image_container img {
+        width: 100%;
+        height: 65vh;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .block.dunkelblau, .block.green {
+    margin-top: 0;
+    .wrapper-headline {
+      & > div {
+        width: 10%;
+      }
+      .headline{
+        height: auto;
+        padding: 15px 0 0;
+        width: 90%;
+        h2 {
+          width: 90%;
+          margin: -2px 35px;
+          font: normal normal 200 22px/28px "Exo 2";
+        }
+      }
+    }
+    .text-image.icon-right, .text-image.icon-left {
+      flex-direction: column-reverse;
+      .icon, .teaser-right {
+        width: 90%;
+        margin: 0 0 0 auto;
+      }
+      .icon {
+        justify-content: center;
+        padding: 30px 0;
+        img {
+          width: 100px;
+        }
+      }
+      .teaser-right {
+        padding: 30px 0;
+        p {
+          width: 90%;
+          margin: 0 auto;
+          font-size: 20px;
+        }
+      }
+      a {
+        width: 100%;
+        padding: 30px 0;
+        .accordion-block {
+          img {
+            width: 60px;
+          }
+          .accordion-button {
+            font: normal normal bold 24px/26px "Exo 2";
+          }
+        }
+      }
+    }
+  }
+  .block.dunkelblau .text-image.icon-right a,
+  .block.dunkelblau .text-image.icon-left a {
+    background: $lawngreen;
+  }
+
+  .block.green {
+    margin-top: -55px;
+    .text-image.icon-right, .text-image.icon-left {
+      flex-direction: inherit;
+      .icon, .teaser-right {
+        margin: 0;
+      }
+    }
+  }
+
+  .teaser .image img {
+    height: 65vh;
+    object-fit: cover;
   }
 }
 

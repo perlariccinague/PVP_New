@@ -33,6 +33,8 @@
       position: absolute;
       width: 100%;
       bottom: 0;
+     /* top: 50%;
+      transform: translateY(-50%);*/
       .slider-prev {
         left: 15%;
       }
@@ -51,6 +53,7 @@
       }
       .slider-menu {
         transform: translateY(-15px);
+       /* transform: translateY(23vw);*/
         b {
           cursor: pointer;
           font-size: 0;
@@ -77,6 +80,66 @@
 
 .slider {
   position: relative;
+}
+
+#slider-headline .ce_sliderStart {
+  .content-slider {
+    width: 74%;
+    margin: 0 auto;
+  }
+}
+
+#slider-headline .ce_sliderStart {
+  position: relative;
+  background: $lawngreen;
+  height: 1130px;
+  margin: auto;
+  clip-path: $clip-path-contain;
+  .ce_image {
+    background: transparent;
+    clip-path: none;
+    position: relative;
+    .description {
+      color: $nordic;
+      padding: 30px;
+      position: absolute;
+      font: normal normal normal 24px/30px "Exo 2";
+      max-width: 400px;
+      border-radius: 30px;
+      border: 6px solid $nordic;
+      left: 50%;
+      top: 25%;
+      z-index: 10;
+      background: $lawngreen;
+      &:before, &:after {
+        position: absolute;
+        content: "";
+        width: 100px;
+        height: 85px;
+        background: $lawngreen url("/files/assets/layout/Pfad 218.svg") no-repeat center/50%;
+        box-sizing: border-box;
+      }
+      &:before {
+        left: -50px;
+        top: -40px
+      }
+      &:after {
+        right: -50px;
+        bottom: -45px;
+      }
+    }
+    .image_container {
+      img {
+        width: 540px;
+        height: 355px;
+        /*position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        border-radius: 20px;*/
+      }
+    }
+  }
 }
 
 .slideshow-container {
@@ -200,3 +263,33 @@
   from {opacity: .4}
   to {opacity: 1}
 }*/
+
+@media screen and (max-width: 860px) {
+  .galery .ce_sliderStart {
+    .content-slider .ce_image {
+      img {
+        width: 100%;
+        height: 85vh;
+        object-fit: cover;
+      }
+      .caption-block {
+        font: normal normal normal 16px/22px "Exo 2";
+        .caption {
+          border-bottom: 3px solid white;
+          max-width: 340px;
+        }
+      }
+    }
+    .slider-control {
+      .slider-prev, .slider-next {
+        transform: translateY(-340px);
+        img {
+          width: 50px;
+        }
+      }
+      .slider-menu {
+        /*transform: translateY(250px);*/
+      }
+    }
+  }
+}
