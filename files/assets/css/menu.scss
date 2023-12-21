@@ -118,11 +118,8 @@
                 color: $lawngreen;
               }
             }
-            /*&:before {
-              display: none;
-            }*/
             strong.active {
-              padding: 0
+              padding: 0 0 0 22px;
             }
             &:not(:last-child) {
               border-bottom: 1px solid white;
@@ -138,7 +135,7 @@
 .menu_block_wrapper .nav_left  .mod_navigation ul li:focus ul.level_2{
   opacity: 1;
   line-height: 2.5em;
-  a {
+  a, strong {
     line-height: 2.5em;
     &:before {
       top: 18px;

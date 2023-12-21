@@ -67,3 +67,37 @@
   }
 }
 
+@media screen and (max-width: 860px) {
+  .benefits-block {
+    margin-bottom: 0;
+    .benefits {
+      margin: 0 auto;
+      .benefits-box {
+        display: block;
+        width: 225px;
+        background-size: auto;
+        margin: 10px auto;
+        .content {
+          img {
+            margin: 0 auto;
+            display: flex;
+            transform: translateY(0);
+            top: 0;
+            padding: 20px 0 0;
+          }
+        }
+        .content-hover {
+          transform: none;
+          display: block;
+          padding: 0 0;
+          height: auto;
+          h3 {
+            margin: 0 0;
+            font: normal normal 600 18px/28px "Exo 2";
+          }
+        }
+      }
+    }
+  }
+}
+

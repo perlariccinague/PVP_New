@@ -113,3 +113,62 @@
     }
   }
 }
+
+@media screen and (max-width: 860px) {
+  .block {
+    &.work-bg-new, &.work-bg {
+      margin-top: 0;
+      .wrapper-headline {
+        .test, & > div {
+          width: 10%;
+        }
+        .leer {
+          display: none;
+        }
+        .ce_text.headline.block {
+          height: auto;
+          padding: 15px 0 0;
+          width: 90%;
+          h2 {
+            width: 90%;
+            margin: -2px auto;
+            font: normal normal 200 22px/28px "Exo 2";
+          }
+        }
+      }
+      .text-image {
+        flex-wrap: wrap;
+        & > div {
+          width: 10%;
+        }
+        .work-teaser-bg {
+          width: 90%;
+          padding: 30px 0 90px;
+          .ce_text.teaser-right.block {
+            width: 90%;
+            margin: 0 auto;
+          }
+        }
+        .leer, .icon-block {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .block.work-bg-new .text-image, .block.work-bg .text-image {
+    flex-wrap: wrap;
+  }
+
+  #training {
+    .block.work-bg-new {
+      margin-top: -55px;
+      .text-image {
+        flex-direction: column-reverse;
+        .work-teaser-bg {
+          margin-left: 10%;
+        }
+      }
+    }
+  }
+}

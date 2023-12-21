@@ -30,11 +30,7 @@
       }
     }
     .slider-control {
-      position: absolute;
-      width: 100%;
       bottom: 0;
-     /* top: 50%;
-      transform: translateY(-50%);*/
       .slider-prev {
         left: 15%;
       }
@@ -43,27 +39,15 @@
       }
       .slider-prev, .slider-next {
         transform: translateY(-25vw);
-        transition: filter   250ms;
-        img {
-          width: 85px;
-        }
         &:hover {
           filter: brightness(0) saturate(100%) invert(73%) sepia(61%) saturate(2380%) hue-rotate(22deg) brightness(104%) contrast(100%)
         }
       }
       .slider-menu {
         transform: translateY(-15px);
-       /* transform: translateY(23vw);*/
         b {
-          cursor: pointer;
-          font-size: 0;
-          display: inline-table;
-          background-color: transparent;
-          width: 18px;
-          height: 18px;
           border: 2px solid white;
           margin: 0 5px;
-          border-radius: 50%;
           &.active {
             background: white;
           }
@@ -72,6 +56,32 @@
     }
   }
 }
+
+.galery, #slider-headline {
+  .slider-control {
+    position: absolute;
+    width: 100%;
+    .slider-prev, .slider-next {
+      transition: filter   250ms;
+      img {
+        width: 85px;
+      }
+    }
+    .slider-menu {
+      b {
+        cursor: pointer;
+        font-size: 0;
+        display: inline-table;
+        background-color: transparent;
+        width: 18px;
+        height: 18px;
+        margin: 0 5px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
 
 #katar.galery .ce_sliderStart .slider-control .slider-menu {
   display: none;
@@ -84,15 +94,18 @@
 
 #slider-headline .ce_sliderStart {
   .content-slider {
-    width: 74%;
-    margin: 0 auto;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: relative;
+    top: 45%;
+    left: 50%;
   }
 }
 
 #slider-headline .ce_sliderStart {
   position: relative;
   background: $lawngreen;
-  height: 1130px;
+  height: 1280px;
   margin: auto;
   clip-path: $clip-path-contain;
   .ce_image {
@@ -102,15 +115,17 @@
     .description {
       color: $nordic;
       padding: 30px;
-      position: absolute;
+      position: relative;
       font: normal normal normal 24px/30px "Exo 2";
-      max-width: 400px;
+      max-width: 375px;
       border-radius: 30px;
       border: 6px solid $nordic;
       left: 50%;
-      top: 25%;
+      top: 0;
       z-index: 10;
       background: $lawngreen;
+      transform: translate(10%, 35%);
+      text-align: left;
       &:before, &:after {
         position: absolute;
         content: "";
@@ -128,141 +143,51 @@
         bottom: -45px;
       }
     }
-    .image_container {
-      img {
-        width: 540px;
-        height: 355px;
-        /*position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        border-radius: 20px;*/
+    img {
+      width: 540px;
+      height: 420px;
+      object-fit: cover;
+      position: relative;
+      border-radius: 20px;
+    }
+    .caption {
+      color: #002B36;
+      position: relative;
+      bottom: -5px;
+      text-align: center;
+      border-bottom: 4px solid #002B36;
+      padding-bottom: 10px;
+      max-width: 860px;
+      margin: 30px auto;
+      font: normal normal 400 20px/30px "Exo 2";
+    }
+  }
+  .slider-control {
+  .slider-prev {
+    left: 5%;
+  }
+    .slider-next{
+      right: 5%;
+    }
+    .slider-prev, .slider-next {
+      top: -270px;
+      position: absolute;
+      &:hover {
+        filter: brightness(0) saturate(100%) invert(90%) sepia(89%);
+      }
+    }
+    .slider-menu {
+      top: 180px;
+      b {
+        border: 2px solid $nordic;;
+        margin: 0 5px;
+        &.active {
+          background: $nordic;
+        }
       }
     }
   }
 }
-
-.slideshow-container {
-  position: relative;
-  background: $lawngreen;
-  height: 1130px;
-  margin: auto;
-  clip-path: $clip-path-contain;
-  img {
-    width: 540px;
-    height: 355px;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    border-radius: 20px;
-  }
-
-  .caption {
-    color: #002B36;
-    position: absolute;
-    bottom: 200px;
-    width: 100%;
-    text-align: center;
-    border-bottom: 4px solid #002B36;
-    padding-bottom: 10px;
-    max-width: 860px;
-    margin: 30px auto;
-    left: 50%;
-    transform: translateX(-50%);
-    font: normal normal 400 20px/30px "Exo 2";
-  }
-  .description {
-    color: $nordic;
-    padding: 30px;
-    position: absolute;
-    font: normal normal normal 24px/30px "Exo 2";
-    max-width: 400px;
-    border-radius: 30px;
-    border: 6px solid $nordic;
-    left: 50%;
-    top: 25%;
-    z-index: 10;
-    background: $lawngreen;
-    &:before, &:after {
-      position: absolute;
-      content: "";
-      width: 100px;
-      height: 85px;
-      background: $lawngreen url("/files/assets/layout/Pfad 218.svg") no-repeat center/50%;
-      box-sizing: border-box;
-    }
-    &:before {
-      left: -50px;
-      top: -40px
-    }
-    &:after {
-      right: -50px;
-      bottom: -45px;
-    }
-  }
-}
-
-.mySlides {
-  display: none;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  img {
-    width: 80px;
-  }
-  &:hover {
-    filter: invert(1);
-  }
-}
-
-.next {
-  right: 5%;
-}
-.prev {
-  left: 5%;
-}
-
-.slider-menu-new {
-  text-align: center;
-  position: absolute;
-  bottom: 175px;
-  transform: translateX(-50%);
-  left: 50%;
-  .dot {
-    cursor: pointer;
-    height: 18px;
-    width: 18px;
-    margin: 0 2px;
-    background-color: transparent;
-    border-radius: 50%;
-    display: inline-block;
-    border: 2px solid $nordic;
-    transition: background-color 0.6s ease;
-  }
-
-  .active, .dot:hover {
-    background-color: $nordic;
-  }
-}
-
-
-/*
-!* Fading animation *!
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}*/
 
 @media screen and (max-width: 860px) {
   .galery .ce_sliderStart {
@@ -287,9 +212,58 @@
           width: 50px;
         }
       }
-      .slider-menu {
-        /*transform: translateY(250px);*/
+    }
+  }
+
+  #slider-headline {
+    .ce_sliderStart {
+      height: 1050px;
+      clip-path: $clip-path-mobile;
+      .content-slider {
+        top: 50%;
+      }
+      .ce_image {
+        .description {
+          transform: translate(-50%, 15%);
+          left: 50%;
+          font: normal normal normal 16px/22px "Exo 2";
+          max-width: 250px;
+          padding: 25px 10px;
+          &:before, &:after {
+            width: 70px;
+          }
+          &:before {
+            left: -30px;
+          }
+          &:after {
+            right: -30px;
+            bottom: -30px;
+          }
+        }
+        img {
+          width: 100%;
+        }
+        .caption {
+          max-width: 340px;
+        }
+      }
+      .slider-control {
+        .slider-prev, .slider-next {
+         top: -150px;
+          img {
+            width: 50px;
+          }
+        }
       }
     }
   }
 }
+
+@media screen and (max-width: 425px)  {
+  #slider-headline .ce_headline {
+    max-width: 180px;
+    line-height: 28px;
+  }
+}
+
+
