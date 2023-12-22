@@ -51,3 +51,15 @@
     }
   }
 }
+
+@media screen and (max-width: 860px) {
+  .teaser .ce_accordionStart.ce_accordion {
+    .toggler {
+      width: 80%;
+      font: normal normal bold 20px/24px "Exo 2";
+      margin: 15px auto;
+      border-radius: 30px;
+      padding: 10px 0 15px 60px;
+    }
+  }
+}

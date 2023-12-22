@@ -38,9 +38,12 @@
             <div class="inside">
               <?= $this->header ?>
             </div>
-            <div class="header-logo-right">
+            <div class="header-logo-right desktop">
             	<img src="files/assets/layout/logo_bottom.svg" alt="">
             </div>
+              <div class="header-logo-right mobile">
+                  <img src="files/assets/layout/Gruppe 215.svg" alt="">
+              </div>
           </header>
         <?php endif; ?>
       <?php $this->endblock(); ?>

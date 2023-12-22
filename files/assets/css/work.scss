@@ -160,13 +160,25 @@
     flex-wrap: wrap;
   }
 
-  #training {
+  #training, #vacancies {
     .block.work-bg-new {
       margin-top: -55px;
       .text-image {
         flex-direction: column-reverse;
         .work-teaser-bg {
           margin-left: 10%;
+        }
+      }
+      a {
+        width: 100%;
+        padding: 30px 0;
+        .accordion-block {
+          img {
+            width: 60px;
+          }
+          .accordion-button {
+            font: normal normal bold 24px/26px "Exo 2";
+          }
         }
       }
     }
