@@ -34,8 +34,10 @@
       background: #002B36;
       border-top-left-radius: 35px;
       opacity: 0.75;
-      height: 56px;
-      padding: 15px 0;
+      /*height: 56px;
+      padding: 15px 0;*/
+      height: auto;
+      padding: 15px 0 0;
       width: 80%;
       h2 {
         text-transform: uppercase;
@@ -548,7 +550,7 @@
   }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1000px) {
   .work {
     .ce_headline {
       font-size: 20px;

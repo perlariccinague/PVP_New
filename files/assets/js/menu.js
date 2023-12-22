@@ -4,10 +4,11 @@ let overlay = document.querySelector(".menu_overlay");
 let logo = document.querySelector(".header-right-bg");
 let menuClose = document.querySelector(".menu-close");
 let logoBottom =  document.querySelector(".header-logo-right");
+let logoBottomMobile =  document.querySelector(".header-logo-right.mobile");
 let headerBG =  document.querySelector(".header-bg");
 let headerLeft =  document.querySelector(".header-contain .header-left");
 let mobileActive = document.querySelector(".mobile_menu_active");
-console.log(mobileActive)
+console.log(logoBottomMobile)
 
 
 mobileMenu.addEventListener('click',() => {
@@ -17,6 +18,7 @@ mobileMenu.addEventListener('click',() => {
     headerLeft.classList.add('fading');
     mobileMenu.style.opacity = "0";
     logoBottom.style.display = "none"
+    logoBottomMobile.style.display = "none"
 })
 
 menuClose.addEventListener('click',() => {
@@ -26,4 +28,5 @@ menuClose.addEventListener('click',() => {
     headerLeft.classList.remove('fading');
     mobileMenu.style.opacity = "1";
     logoBottom.style.display = ""
+    logoBottomMobile.style.display = ""
 })
