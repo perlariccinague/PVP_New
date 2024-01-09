@@ -82,6 +82,9 @@
                 color: $nordic;
               }
             }
+            strong {
+              font: normal normal 600 22px/26px "Exo 2";
+            }
           }
         }
       }
@@ -151,6 +154,8 @@
     }
     .footer-teaser {
       padding-top: 0;
+      width: 90%;
+      margin: 0 auto;
       .ce_text {
         font: italic normal 300 20px/28px "Exo 2";
       }

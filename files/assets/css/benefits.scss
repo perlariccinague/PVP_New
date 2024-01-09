@@ -10,10 +10,16 @@
   padding: 50px 0;
 }
 
+.benefits {
+  width: 24%;
+  margin: 10px 0;
+  height: 280px;
+}
+
 .benefits-box {
   position: relative;
   height: 260px;
-  background: url("/files/assets/layout/Vereinigungsmenge 1.svg") no-repeat;
+  background: url("/files/assets/layout/Vereinigungsmenge 1.svg") center no-repeat;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -21,7 +27,7 @@
   color: white;
   text-align: center;
   border-radius: 10px;
-  width: 260px;
+/*  width: 260px;*/
   background-size: 260px;
   transition: transform .5s;
   .content {
@@ -66,12 +72,18 @@
     }
   }
 }
+@media screen and (max-width: 1200px) {
+  .benefits {
+    width: 50%;
+  }
+}
 
 @media screen and (max-width: 860px) {
   .benefits-block {
     margin-bottom: 0;
     .benefits {
       margin: 0 auto;
+      width: 100%;
       .benefits-box {
         display: block;
         width: 225px;
@@ -83,7 +95,7 @@
             display: flex;
             transform: translateY(0);
             top: 0;
-            padding: 20px 0 0;
+            padding: 50px 0 0;
           }
         }
         .content-hover {

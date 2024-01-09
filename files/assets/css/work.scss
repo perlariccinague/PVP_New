@@ -114,6 +114,16 @@
   }
 }
 
+@media screen and (max-width: 1550px) {
+  .block.work-bg-new, .block.work-bg {
+    margin-top: -140px;
+  }
+  #training .block.work-bg-new, #training .block.work-bg,
+  #vacancies .block.work-bg-new, #vacancies .block.work-bg{
+    margin-top: -85px;
+  }
+}
+
 @media screen and (max-width: 860px) {
   .block {
     &.work-bg-new, &.work-bg {
@@ -154,6 +164,9 @@
         }
       }
     }
+    &.work-bg {
+      margin-top: -55px;
+    }
   }
 
   .block.work-bg-new .text-image, .block.work-bg .text-image {
@@ -182,5 +195,18 @@
         }
       }
     }
+  }
+
+  #training .block.work-bg {
+    margin-top: 0;
+  }
+  #vacancies .block.work-bg-new, #vacancies .block.work-bg {
+    margin-top: -55px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .block.work-bg {
+    margin-top: -85px;
   }
 }

@@ -168,7 +168,7 @@
     border-bottom: 3px solid;
     max-width: 430px;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-size: 35px;
   }
   .ce_image {
@@ -462,6 +462,7 @@
   transform: translateY(60px);
   padding-bottom: 10px;
   font: normal normal 700 50px/52px "Exo 2";
+  max-width: 355px;
 }
 
 
@@ -547,6 +548,53 @@
         color: $lawngreen;
       }
     }
+  }
+}
+
+.privacy .ce_text {
+  h3 {
+    font: normal normal 500 27px/35px "Exo 2";
+    text-transform: uppercase;
+  }
+  p {
+    strong {
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .project-block .ce_headline {
+    max-width: 320px;
+  }
+  #benefit.project-block .ce_headline {
+    font-size: 40px;
+  }
+
+  #slider-headline.work .ce_headline, .work .ce_headline {
+    transform: translateY(112px);
+    max-width: 260px;
+    font: normal normal 200 28px/35px "Exo 2";
+  }
+  .work .ce_headline {
+    transform: translateY(38px);
+  }
+
+  .block.dunkelblau .text-image.icon-right a .accordion-block,
+  .block.dunkelblau .text-image.icon-right .without-icon .accordion-block,
+  .block.dunkelblau .text-image.icon-left a .accordion-block,
+  .block.dunkelblau .text-image.icon-left .without-icon .accordion-block,
+  .block.green .text-image.icon-right a .accordion-block,
+  .block.green .text-image.icon-right .without-icon .accordion-block,
+  .block.green .text-image.icon-left a .accordion-block,
+  .block.green .text-image.icon-left .without-icon .accordion-block {
+    width: 205px;
+  }
+}
+
+@media screen and (max-width: 1165px) {
+  .block.dunkelblau {
+    margin-top: -138px;
   }
 }
 

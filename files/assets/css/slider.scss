@@ -126,6 +126,7 @@
       background: $lawngreen;
       transform: translate(10%, 35%);
       text-align: left;
+      opacity: 1;
       &:before, &:after {
         position: absolute;
         content: "";
@@ -149,6 +150,7 @@
       object-fit: cover;
       position: relative;
       border-radius: 20px;
+      opacity: 1;
     }
     .caption {
       color: #002B36;
@@ -181,11 +183,20 @@
       b {
         border: 2px solid $nordic;;
         margin: 0 5px;
+        background: transparent;
+        transition: background-color 0.6s ease;
         &.active {
           background: $nordic;
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #slider-headline .ce_sliderStart .slider-control .slider-prev,
+  #slider-headline .ce_sliderStart .slider-control .slider-next {
+    top: -170px;
   }
 }
 
