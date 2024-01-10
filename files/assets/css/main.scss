@@ -206,10 +206,10 @@
   .figure {
     position: relative;
 
-    height: 900px;
+    height: auto;
     img {
       width: 100%;
-      height: 900px;
+      height: auto;
       object-fit: cover;
 
     }
@@ -225,7 +225,6 @@
       border-radius: 35px 35px 0 0;
       transition: height .6s ;
       bottom: 0;
-      cursor: pointer;
       p {
         color: $nordic;
         text-align: center;
@@ -307,7 +306,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 50px auto;
-  /*height: 70vh;*/
   object-fit: cover;
   transition: transform 250ms;
   .history-image, .history-teaser {
@@ -386,12 +384,12 @@
     }
   }
   .history-image {
-    height: 100%;
     clip-path: polygon(68.351% 0%, 68.351% 0%, 68.756% 0.026%, 69.136% 0.103%, 69.49% 0.227%, 69.817% 0.398%, 70.115% 0.612%, 70.383% 0.867%, 70.619% 1.161%, 70.823% 1.491%, 70.993% 1.856%, 71.128% 2.253%, 73.378% 10.525%, 99.936% 10.525%, 99.936% 100%, 0% 100%, 0% 0%);
     img {
       width: 100%;
       transition: transform .5s;
       height: 100%;
+      object-fit: cover;
     }
   }
   &:hover {
@@ -560,6 +558,42 @@
     strong {
       font-weight: 600;
     }
+  }
+}
+
+@media screen and (max-width: 1650px) {
+   .staff-item {
+    .figure {
+      figcaption {
+        height: 11%;
+      }
+    }
+  }
+  .board .staff-item .figure:hover figcaption {
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .work .ce_headline, .project-block .ce_headline {
+    font-size: 30px;
+    max-width: 380px;
+  }
+  #benefit.project-block .ce_headline {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .staff-item {
+    .figure {
+      figcaption {
+        height: 13%;
+      }
+    }
+  }
+  .board .staff-item .figure:hover figcaption {
+    height: 60%;
   }
 }
 
@@ -767,12 +801,37 @@
     transform: translateY(75px);
   }
 
+  #slider-headline.work .ce_headline {
+    max-width: 260px
+  }
+
+  .history-block .history-teaser .ce_text {
+    img {
+      width: 180px;
+    }
+    h3 {
+      font-size: 27px;
+    }
+    p, a {
+      font-size: 20px;
+    }
+  }
+
 }
 
 @media screen and (max-width: 450px) {
   .project-block .ce_headline {
     max-width: 180px;
     line-height: 28px;
+  }
+
+  #slider-headline.work .ce_headline {
+    transform: translateY(80px);
+    max-width: 180px
+  }
+
+  #benefit.project-block .ce_headline {
+    max-width: max-content;
   }
 }
 

@@ -38,10 +38,17 @@ a {
     left: 50%;
     border-radius: 50%;
     border: 20px solid #012932;
-     img {
+    /* img {
       transition: filter 250ms;
       &:hover {
         filter:  brightness(0) invert(81%) sepia(69%) saturate(1452%) hue-rotate(12deg) brightness(90%);
+      }
+    }*/
+    .teams-icon {
+      color: white;
+      transition: color 250ms;
+      &:hover {
+        color: $lawngreen;
       }
     }
   }
@@ -92,13 +99,23 @@ a {
     }
 }
 
+@media screen and (max-width: 1600px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .application {
     margin-top: -50px;
     .border-raduis {
       border: 8px solid #012932;
-      img {
+      /*img {
         width: 70px;
+      }*/
+      .teams-icon {
+        width: 85px;
+        height: 85px;
       }
     }
   }

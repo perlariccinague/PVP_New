@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
+   /* align-items: center;*/
   }
 }
 
@@ -120,6 +120,9 @@
 }
 
 .mod_mobile_menu {
+  position: absolute;
+  right: 0;
+  top: 100px;
   transition: transform 250ms;
   .mobile_menu_trigger {
     cursor: pointer;
@@ -167,6 +170,7 @@
 @media screen and (max-width: 1000px) {
   #header {
     overflow: hidden;
+    z-index: 4;
     .inside {
       width: 100%;
       display: block;
@@ -250,7 +254,7 @@
   .mod_mobile_menu.block {
     position: absolute;
     right: 15px;
-    bottom: 15px;
+    top: 170px;
     .mobile_menu_trigger {
       img {
         width: 50px;

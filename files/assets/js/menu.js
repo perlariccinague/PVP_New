@@ -8,7 +8,9 @@ let logoBottomMobile =  document.querySelector(".header-logo-right.mobile");
 let headerBG =  document.querySelector(".header-bg");
 let headerLeft =  document.querySelector(".header-contain .header-left");
 let mobileActive = document.querySelector(".mobile_menu_active");
-console.log(logoBottomMobile)
+let logoMobile =  document.querySelector(".header-right-bg.mobile");
+console.log(logoMobile)
+
 
 
 mobileMenu.addEventListener('click',() => {
@@ -17,8 +19,9 @@ mobileMenu.addEventListener('click',() => {
     headerBG.classList.add('fading');
     headerLeft.classList.add('fading');
     mobileMenu.style.opacity = "0";
-    logoBottom.style.display = "none"
-    logoBottomMobile.style.display = "none"
+    logoBottom.style.display = "none";
+    logoBottomMobile.style.display = "none";
+    logoMobile.classList.remove('fading');
 })
 
 menuClose.addEventListener('click',() => {
@@ -29,4 +32,5 @@ menuClose.addEventListener('click',() => {
     mobileMenu.style.opacity = "1";
     logoBottom.style.display = ""
     logoBottomMobile.style.display = ""
+    logoMobile.classList.add('fading');
 })

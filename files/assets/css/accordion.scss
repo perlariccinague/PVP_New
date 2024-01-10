@@ -13,6 +13,7 @@
       margin: 15px 130px;
       font: normal normal bold 24px/27px "Exo 2";
       background: url("/files/assets/layout/Pfad 186.svg") no-repeat 2%;
+      box-sizing: border-box;
       transition: color 250ms;
       &.active {
         background-image: url("/files/assets/layout/Pfad 310.svg");
@@ -55,11 +56,23 @@
 @media screen and (max-width: 860px) {
   .teaser .ce_accordionStart.ce_accordion {
     .toggler {
-      width: 80%;
+      width: 90%;
       font: normal normal bold 20px/24px "Exo 2";
       margin: 15px auto;
       border-radius: 30px;
       padding: 10px 0 15px 60px;
     }
+    .accordion.ui-accordion-content {
+      width: 90%;
+      margin: 0 auto;
+      .accordion-teaser {
+        p, ul {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  #vacancies .block.work-bg-new .accordion.ui-accordion-content p a {
+    padding: 15px;
   }
 }

@@ -7,8 +7,7 @@
     flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
-    height: 400px;
-    align-items: center;
+    height: 200px;
     position: relative;
     .menu_left {
       background: url("/files/assets/layout/Logo_bg.svg") center top no-repeat;
@@ -37,6 +36,7 @@
     .menu-close {
       right: 0;
       position: absolute;
+      top: 100px;
     }
   }
 }
@@ -46,7 +46,7 @@
     background:transparent;
     .menu-Navigation {
       width: 90%;
-      margin: 100px auto 0;
+      margin: 7vw auto;
       .menu_block_wrapper {
         display: flex;
         justify-content: space-between;
@@ -89,14 +89,12 @@
         &.level_2 {
           display: block;
           max-width: 300px;
-         /* transition: dispay .3s;*/
           opacity: 0;
           transition: opacity 500ms;
           li {
             margin-bottom: 0;
-          /*  padding: 10px 0 0;*/
             padding-bottom: 0;
-            line-height: 0em;
+            line-height: 0;
             a, strong {
               text-transform: initial;
               position: relative;
@@ -216,14 +214,20 @@
 
 .mobile_menu_active {
   overflow-y: hidden;
-  /*.menu-overlay {
-    opacity: 1;
-    z-index: 10
-  }*/
 }
 
 .mobile_menu.active.position_right {
   box-shadow: none;
+}
+
+.inner .header-right-bg.mobile {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1500px) {
+  .mobile_menu .inner .menu-Navigation {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 1150px) {
@@ -235,7 +239,6 @@
 @media screen and (max-width: 1000px) {
   .mobile_menu .inner {
     .menu-Navigation {
-      margin-top: 20px;
       .menu_block_wrapper {
         margin-left: 0;
         .nav_left, .nav_right {
@@ -285,11 +288,33 @@
   }
 
   .inner .menu_top {
-    height: 230px;
+   /* height: 230px;*/
     .menu-close {
+      top: 170px;
       img {
         width: 50px;
       }
+    }
+  }
+
+  .inner .header-right-bg.mobile {
+    background: url("/files/assets/layout/Gruppe 14-1.svg") center top 0/100% no-repeat;
+    height: 175px;
+    width: 195px;
+    position: absolute;
+    opacity: 1;
+    padding: 15px;
+    transition: opacity 100ms;
+    &.fading {
+      opacity: 0;
+    }
+    .header-logo {
+      img {
+        width: 150px;
+      }
+    }
+    .search {
+      top: 110px;
     }
   }
 }
