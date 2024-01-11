@@ -108,7 +108,7 @@
   height: 1280px;
   margin: auto;
   clip-path: $clip-path-contain;
-  .ce_image {
+  .ce_image, .kk-slider-element {
     background: transparent;
     clip-path: none;
     position: relative;
@@ -190,6 +190,101 @@
         }
       }
     }
+  }
+}
+
+#kk-slider {
+  position: relative;
+  background: $lawngreen;
+  height: 1280px;
+  margin: auto;
+  clip-path: $clip-path-contain;
+  .kk-content-slider {
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: relative;
+    top: 35%;
+    left: 50%;
+  }
+}
+
+.kk-slider-element {
+  position: relative;
+  .quote {
+    position: absolute;
+    transform: translateX(100vw);
+    transition: transform 500ms;
+    color: $nordic;
+    padding: 30px;
+   /* position: relative;*/
+    font: normal normal normal 24px/30px "Exo 2";
+    max-width: 375px;
+    border-radius: 30px;
+    border: 6px solid $nordic;
+    left: 50%;
+    top: -11vw;
+    z-index: 10;
+    background: $lawngreen;
+  /*  transform: translate(10%, 35%);*/
+    text-align: left;
+    opacity: 1;
+    &:before, &:after {
+      position: absolute;
+      content: "";
+      width: 100px;
+      height: 85px;
+      background: $lawngreen url("/files/assets/layout/Pfad 218.svg") no-repeat center/50%;
+      box-sizing: border-box;
+    }
+    &:before {
+      left: -50px;
+      top: -40px
+    }
+    &:after {
+      right: -50px;
+      bottom: -45px;
+    }
+  }
+  .image {
+    position: absolute;
+  /*  transform: translateX(-100%);*/
+    transform: translateX(-100vw);
+    transition: transform 500ms;
+    left: 33%;
+    img {
+      width: 540px;
+      height: 420px;
+      object-fit: cover;
+      position: relative;
+      border-radius: 20px;
+      opacity: 1;
+    }
+  }
+  &.kk-slider-shown {
+    .quote {
+      transform: translateX(-0%);
+
+    }
+    .image {
+    /*  transform: translateX(-50%);*/
+      transform: translateX(0);
+    /*  left: 50%;*/
+    }
+  }
+}
+
+.kk-slider-controls {
+  position: absolute;
+  width: 100%;
+  .kk-slider-prev, .kk-slider-next {
+    top: 270px;
+    position: absolute;
+  }
+  .kk-slider-prev {
+    left: 5%;
+  }
+  .kk-slider-next {
+    right: 5%;
   }
 }
 

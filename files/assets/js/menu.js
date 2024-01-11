@@ -9,7 +9,7 @@ let headerBG =  document.querySelector(".header-bg");
 let headerLeft =  document.querySelector(".header-contain .header-left");
 let mobileActive = document.querySelector(".mobile_menu_active");
 let logoMobile =  document.querySelector(".header-right-bg.mobile");
-console.log(logoMobile)
+
 
 
 

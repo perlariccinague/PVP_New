@@ -1,25 +1,44 @@
-<div class="ce_sliderStart block">
+<!--<div class="ce_sliderStart block">
     <div class="content-slider" data-config="3000,300,0,1" style="visibility: visible;">
         <div class="slider-wrapper" ">
-        <?php foreach($this->slide as $key=>$slide): ?>
-            <div class="ce_image block" <?php echo $this->cssID ?>>
-                <div class="description"><?= $slide->description ?></div>
-                <img src="{{file::<?= $slide->image ?>}}">
-                <figcaption class="caption"><?= $slide->caption ?></figcaption>
+        <?php /*foreach($this->slide as $key=>$slide): */?>
+            <div class="ce_image block" <?php /*echo $this->cssID */?>>
+                <div class="description"><?/*= $slide->description */?></div>
+                <img src="{{file::<?/*= $slide->image */?>}}">
+                <figcaption class="caption"><?/*= $slide->caption */?></figcaption>
                 <figure class="image_container">
                 </figure>
             </div>
-        <?php endforeach; ?>
+        <?php /*endforeach; */?>
      </div>
    </div>
    <nav class="slider-control">
     <a href="#" class="slider-prev"><img src="files/assets/layout/arrow-left.svg" alt=""></a>
     <span class="slider-menu">
-      <!--  <b data-index="0" class="active">•</b>
-        <b data-index="1" class="">•</b>
-        <b data-index="2" class="">•</b>
-        <b data-index="3" class="">•</b>-->
     </span>
     <a href="#" class="slider-next"><img src="files/assets/layout/arrow-right.svg" alt=""></a>
    </nav>
+</div>-->
+
+
+<div id="kk-slider">
+    <div class="kk-content-slider" data-config="3000,300,0,1" style="visibility: visible;">
+        <div class="kk-wrapper" >
+        <?php foreach($this->slide as $key=>$slide): ?>
+            <div class="kk-slider-element" <?php echo $this->cssID ?>>
+                <div class="quote"><?= $slide->description ?></div>
+                <div class="image"><img src="{{file::<?= $slide->image ?>}}"></div>
+                <figcaption class="caption"><?= $slide->caption ?></figcaption>
+                <figure class="image_container">
+                </figure>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>
+  <div class="kk-slider-controls">
+    <div class="kk-slider-prev"><img src="files/assets/layout/arrow-left.svg" alt=""></div>
+      <span class="slider-menu">
+    </span>
+    <div class="kk-slider-next"><img src="files/assets/layout/arrow-right.svg" alt=""></div>
+  </div>
 </div>

@@ -1,4 +1,4 @@
-// Next/previous controls
+/*// Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
@@ -7,22 +7,6 @@ function plusSlides(n) {
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
-
-/*function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-}*/
 
 
 let sliderAll = document.querySelectorAll(".mySlides");
@@ -45,6 +29,48 @@ console.log(sliderAll.length)
 
 
 let slideIndex = 1;
-showSlides(slideIndex);
+showSlides(slideIndex);*/
+
+
+//sliderShow
+
+const allSliderElements = document.querySelectorAll('.kk-slider-element');
+const sliderNext = document.querySelector('.kk-slider-next img');
+const sliderPrev = document.querySelector('.kk-slider-prev img');
+const sliderCount = allSliderElements.length-1;
+let shownImage = 0;
+
+console.log(sliderPrev);
+allSliderElements[0].classList.add('kk-slider-shown');
+
+sliderNext.addEventListener('click', function() {
+    if(shownImage === sliderCount) {
+        console.log(shownImage)
+        shownImage = 0;
+    } else {
+        console.log(shownImage)
+        shownImage++;
+    }
+    allSliderElements.forEach(function(element, index) {
+        element.classList.remove('kk-slider-shown');
+        if(index === shownImage) {
+            element.classList.add('kk-slider-shown');
+        }
+    })
+})
+
+sliderPrev.addEventListener('click', function() {
+    if(shownImage === 0) {
+        shownImage = sliderCount;
+    } else {
+        shownImage--;
+    }
+    allSliderElements.forEach(function(element, index) {
+        element.classList.remove('kk-slider-shown');
+        if(index === shownImage) {
+            element.classList.add('kk-slider-shown');
+        }
+    })
+})
 
 
