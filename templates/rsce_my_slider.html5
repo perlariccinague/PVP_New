@@ -37,8 +37,7 @@
 </div>
   <div class="kk-slider-controls">
     <div class="kk-slider-prev"><img src="files/assets/layout/arrow-left.svg" alt=""></div>
-      <span class="slider-menu">
-    </span>
+      <div class="dots"></div>
     <div class="kk-slider-next"><img src="files/assets/layout/arrow-right.svg" alt=""></div>
   </div>
 </div>

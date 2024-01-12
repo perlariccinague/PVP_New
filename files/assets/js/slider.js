@@ -35,26 +35,80 @@ showSlides(slideIndex);*/
 //sliderShow
 
 const allSliderElements = document.querySelectorAll('.kk-slider-element');
+const sliderImg = document.querySelectorAll('.kk-slider-element .image');
 const sliderNext = document.querySelector('.kk-slider-next img');
 const sliderPrev = document.querySelector('.kk-slider-prev img');
+
 const sliderCount = allSliderElements.length-1;
 let shownImage = 0;
+/*console.log(sliderImg[0]);*/
 
-console.log(sliderPrev);
+const sliders = document.querySelectorAll("#kk-slider");
+
+
+for (let i = 0; i < sliders.length; ++i) {
+    const slider = sliders[i];
+    const dots = slider.querySelector(".dots");
+
+    // Creates dots and add listeners to them
+    for (let i = 0; i < sliderImg.length; ++i) {
+        const dot = document.createElement("div");
+        dot.classList.add("dot");
+        /*console.log(dot)*/
+        dots.appendChild(dot);
+        dot.addEventListener("click", dotClick.bind(null, i), false);
+    }
+    const allDots = dots.querySelectorAll(".dot");
+    allDots.forEach(allDot => {
+      /*  if(allDot === showImage){
+            allDot.classList.add("active") ;
+        }*/
+        console.log(allDot)
+
+    })
+
+    allDots[0].classList.add("active");
+
+    function dotClick(index) {
+        if (index == shownImage){
+            return false;
+        }
+
+      /*  if (index > shownImage) {
+          /!*  return(num + 1);*!/
+            return true;
+        }
+
+        else {
+            return false
+        }*/
+
+    }
+}
+
+
+
 allSliderElements[0].classList.add('kk-slider-shown');
+
 
 sliderNext.addEventListener('click', function() {
     if(shownImage === sliderCount) {
-        console.log(shownImage)
         shownImage = 0;
     } else {
-        console.log(shownImage)
         shownImage++;
     }
     allSliderElements.forEach(function(element, index) {
         element.classList.remove('kk-slider-shown');
         if(index === shownImage) {
             element.classList.add('kk-slider-shown');
+        }
+    })
+
+const dot1 = document.querySelectorAll('.dot')
+    dot1.forEach(function (element, index){
+        element.classList.remove('active');
+        if(index === shownImage) {
+            element.classList.add('active')
         }
     })
 })
@@ -69,6 +123,13 @@ sliderPrev.addEventListener('click', function() {
         element.classList.remove('kk-slider-shown');
         if(index === shownImage) {
             element.classList.add('kk-slider-shown');
+        }
+    })
+    const dot1 = document.querySelectorAll('.dot')
+    dot1.forEach(function (element, index){
+        element.classList.remove('active');
+        if(index === shownImage) {
+            element.classList.add('active')
         }
     })
 })
