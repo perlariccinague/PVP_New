@@ -592,8 +592,12 @@
       }
     }
   }
-  .board .staff-item .figure:hover figcaption {
-    height: 60%;
+
+  .board .staff-item .figure:hover figcaption p:nth-child(2) {
+    font-size: 30px;
+  }
+  .staff-item .figure figcaption p {
+    font-size: 18px;
   }
 }
 
@@ -624,11 +628,22 @@
   .block.green .text-image.icon-left .without-icon .accordion-block {
     width: 205px;
   }
+
+  .board .staff-item .figure:hover figcaption {
+   height: 60%;
+ }
 }
 
 @media screen and (max-width: 1165px) {
   .block.dunkelblau {
-    margin-top: -138px;
+    /*margin-top: -138px;*/
+  }
+
+  .staff-item .figure figcaption {
+    height: 16%;
+  }
+  .board .staff-item .figure:hover figcaption {
+    height: 70%;
   }
 }
 

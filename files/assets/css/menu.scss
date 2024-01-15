@@ -228,12 +228,18 @@
   .mobile_menu .inner .menu-Navigation {
     margin: 0 auto;
   }
+  .menu_block_wrapper .nav_left .mod_navigation ul li strong.active {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 1150px) {
   .mobile_menu .inner .menu-Navigation .menu_block_wrapper {
-    margin-left: 137px;
+    margin: 165px 0 0 137px;
   }
+ /* .menu_block_wrapper .nav_left .mod_navigation ul li strong.active {
+    font-size: 20px;
+  }*/
 }
 
 @media screen and (max-width: 1000px) {

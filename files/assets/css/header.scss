@@ -162,7 +162,7 @@
 
 @media screen and (max-width: 1250px) {
   .header-logo-right img {
-    width: 240px;
+    width: 234px;
     height: auto;
   }
 }
@@ -243,7 +243,6 @@
   }
 
   .start #header .inside .mod_article .header-contain .header-right-bg {
-  /*  transform: translateX(0%) skewX(15deg);*/
     transform: translateX(calc(-100% + 40px));
     &.transition {
       left: 0;
@@ -277,7 +276,7 @@
   }
 }
 
-@media screen and (max-width: 450px)  {
+@media screen and (max-width: 450px) {
   #header .inside .mod_article .header-contain .header-right-bg {
     width: 195px;
     right: -25px;

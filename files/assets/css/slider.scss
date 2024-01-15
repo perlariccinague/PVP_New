@@ -361,7 +361,7 @@
     }
   }
 
-  #slider-headline {
+ /* #slider-headline {
     .ce_sliderStart {
       height: 1050px;
       clip-path: $clip-path-mobile;
@@ -402,7 +402,7 @@
         }
       }
     }
-  }
+  }*/
 
   #kk-slider {
     clip-path: $clip-path-mobile;
@@ -413,8 +413,8 @@
       font: normal normal normal 16px/22px "Exo 2";
       max-width: 250px;
       padding: 25px 10px;
-      left: 13%;
-      top: -31%;
+      /*left: 13%;
+      top: -31%;*/
     }
     .caption {
       max-width: 340px;
@@ -430,10 +430,16 @@
   }
 }
 
-@media screen and (max-width: 425px)  {
-  #slider-headline .ce_headline {
+@media screen and (max-width: 450px)  {
+ /* #slider-headline .ce_headline {
     max-width: 180px;
     line-height: 28px;
+  }*/
+  .kk-slider-element {
+   .quote {
+     left: 13%;
+     top: -31%;
+   }
   }
 }
 
