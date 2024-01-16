@@ -46,7 +46,7 @@
     background:transparent;
     .menu-Navigation {
       width: 90%;
-      margin: 7vw auto;
+      margin: 9vw auto;
       .menu_block_wrapper {
         display: flex;
         justify-content: space-between;
@@ -100,13 +100,13 @@
               position: relative;
               font: normal normal 400 22px/52px Segoe UI;
               padding-left: 22px;
-              line-height: 0em;
+              line-height: 0;
               transition: color 250ms, line-height 500ms;
               &:before {
                 position: absolute;
                 content: "";
                 left: 0;
-                top: 0px;
+                top: 0;
                 width: 20px;
                 height: 20px;
                 background: url("/files/assets/layout/Pfad 311.svg") no-repeat;

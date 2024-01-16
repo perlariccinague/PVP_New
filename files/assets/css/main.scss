@@ -219,7 +219,7 @@
       width: 100%;
       padding: 0 1rem;
       overflow: hidden;
-      height: 9%;
+      height: 8%;
       background: #BCD100;
       opacity: 0.75;
       border-radius: 35px 35px 0 0;
@@ -549,25 +549,37 @@
   }
 }
 
-.privacy .ce_text {
-  h3 {
-    font: normal normal 500 27px/35px "Exo 2";
-    text-transform: uppercase;
-  }
-  p {
-    strong {
-      font-weight: 600;
+.privacy {
+  margin-bottom: 100px;
+  .ce_text {
+    h3 {
+      font: normal normal 500 27px/35px "Exo 2";
+      text-transform: uppercase;
+    }
+    p {
+      strong {
+        font-weight: 600;
+      }
     }
   }
 }
 
+@media screen and (max-width: 1850px) {
+  .staff-item .figure figcaption {
+    height: 10%;
+  }
+}
+
 @media screen and (max-width: 1650px) {
-   .staff-item {
+ /*  .staff-item {
     .figure {
       figcaption {
         height: 11%;
       }
     }
+  }*/
+  .staff-item .figure figcaption {
+    height: 11%;
   }
   .board .staff-item .figure:hover figcaption {
     height: 50%;

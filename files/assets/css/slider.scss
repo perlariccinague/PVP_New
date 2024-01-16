@@ -225,7 +225,7 @@
     border-radius: 30px;
     border: 6px solid $nordic;
     left: 52%;
-    top: -11vw;
+    top: -11vh;
     z-index: 10;
     background: $lawngreen;
     text-align: left;
@@ -317,7 +317,6 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-  /*  cursor: pointer;*/
     border: 2px solid $nordic;;
     margin: 0 5px;
     background: transparent;
@@ -361,49 +360,6 @@
     }
   }
 
- /* #slider-headline {
-    .ce_sliderStart {
-      height: 1050px;
-      clip-path: $clip-path-mobile;
-      .content-slider {
-        top: 50%;
-      }
-      .ce_image {
-        .description {
-          transform: translate(-50%, 15%);
-          left: 50%;
-          font: normal normal normal 16px/22px "Exo 2";
-          max-width: 250px;
-          padding: 25px 10px;
-          &:before, &:after {
-            width: 70px;
-          }
-          &:before {
-            left: -30px;
-          }
-          &:after {
-            right: -30px;
-            bottom: -30px;
-          }
-        }
-        img {
-          width: 100%;
-        }
-        .caption {
-          max-width: 340px;
-        }
-      }
-      .slider-control {
-        .slider-prev, .slider-next {
-         top: -150px;
-          img {
-            width: 50px;
-          }
-        }
-      }
-    }
-  }*/
-
   #kk-slider {
     clip-path: $clip-path-mobile;
     height: 1200px;
@@ -413,8 +369,6 @@
       font: normal normal normal 16px/22px "Exo 2";
       max-width: 250px;
       padding: 25px 10px;
-      /*left: 13%;
-      top: -31%;*/
     }
     .caption {
       max-width: 340px;
