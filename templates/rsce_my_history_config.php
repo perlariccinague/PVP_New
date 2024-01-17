@@ -27,7 +27,7 @@ return array(
         ),
         'link' => array(
             'label' => array('Link', 'Auf welche Seite soll diese Box verlinken?'),
-            'inputType' => 'pageTree'
+            'inputType' => 'url'
         ),
         'icon' => array(
             'label' => array('Icon', 'Beschreibung...'),

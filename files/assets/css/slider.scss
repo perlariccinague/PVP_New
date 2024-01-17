@@ -7,6 +7,8 @@
       .ce_image {
         img {
           width: 100%;
+          height: 950px;
+          object-fit: cover;
         }
         .caption-block {
           position: absolute;

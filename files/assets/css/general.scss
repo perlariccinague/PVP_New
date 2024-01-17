@@ -6,7 +6,7 @@ body {
 }
 
 h2 {
-  font: normal normal 200 35px/54px "Exo 2";
+  font: normal normal 200 40px/54px "Exo 2";
 }
 
 ul {
@@ -50,6 +50,10 @@ a {
 
 .spacing .application {
   margin-top: 0;
+}
+
+.without-spacing .application {
+  margin-top: -175px;
 }
 
 .teaser .ce_accordionStart.ce_accordion .accordion.ui-accordion-content p,
@@ -116,6 +120,12 @@ a {
   img {
     width: 30px;
     transition: filter 250ms;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  h2 {
+    font-size: 35px;
   }
 }
 
