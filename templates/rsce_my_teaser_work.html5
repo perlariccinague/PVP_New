@@ -24,7 +24,8 @@ switch($chosenColor) {
             <?php if($this->link !== ""): ?>
                 <a href="<?= $this->link ?>">
                     <div class="accordion-block">
-                        <img src="{{file::<?= $this->icon1 ?>}}">
+                        <img class="icon-content" src="{{file::<?= $this->icon1 ?>}}">
+                        <img  class="icon-hover" src="{{file::<?= $this->iconHover ?>}}">
                         <div class="accordion-button">Hier mehr Erfahren</div>
                     </div>
                 </a>

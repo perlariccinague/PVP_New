@@ -54,15 +54,29 @@
       .accordion-block {
         text-align: center;
         width: 250px;
+        color: $nordic;
+        transition: color 250ms;
+        .icon-hover {
+          display: none;
+        }
         .accordion-button {
           width: auto;
           text-align: center;
           font: normal normal bold 30px/30px "Exo 2";
-          color: #002B36;
           text-transform: uppercase;
           border-top: 3px solid;
           padding-top: 10px;
           margin-top: 10px;
+        }
+        &:hover {
+          color: $lawngreen;
+          & .icon-hover {
+            opacity: 1;
+            display: initial;
+          }
+          & .icon-content {
+            display: none;
+          }
         }
       }
     }
@@ -109,6 +123,11 @@
       justify-content: center;
       .icon {
         text-align: center;
+        margin-top: -100px;
+
+        img {
+          width: 175px;
+        }
       }
     }
   }
@@ -127,7 +146,7 @@
 @media screen and (max-width: 860px) {
   .block {
     &.work-bg-new, &.work-bg {
-      margin-top: 0;
+      margin-top: -85px;
       .wrapper-headline {
         .test, & > div {
           width: 10%;
@@ -157,6 +176,7 @@
           .ce_text.teaser-right.block {
             width: 90%;
             margin: 0 auto;
+            font-size: 20px;
           }
         }
         .leer, .icon-block {

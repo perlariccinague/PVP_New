@@ -1,6 +1,7 @@
 @import "variables";
 .teaser {
   .ce_accordionStart.ce_accordion {
+    margin: 25px auto;
     .toggler {
       width: 60%;
       position: relative;
@@ -10,10 +11,11 @@
       text-transform: uppercase;
       border: 2px solid;
       border-radius: 42px;
-      margin: 15px 130px;
+      margin-left: 130px;
       font: normal normal bold 24px/27px "Exo 2";
       background: url("/files/assets/layout/Pfad 186.svg") no-repeat 2%;
       box-sizing: border-box;
+      outline: 0;
       transition: color 250ms;
       &.active {
         background-image: url("/files/assets/layout/Pfad 310.svg");
@@ -55,6 +57,7 @@
 
 @media screen and (max-width: 860px) {
   .teaser .ce_accordionStart.ce_accordion {
+    margin: 0 auto;
     .toggler {
       width: 90%;
       font: normal normal bold 20px/24px "Exo 2";

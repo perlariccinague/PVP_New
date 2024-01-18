@@ -34,15 +34,12 @@
       background: #002B36;
       border-top-left-radius: 35px;
       opacity: 0.75;
-      /*height: 56px;
-      padding: 15px 0;*/
       height: auto;
       padding: 15px 0 0;
       width: 80%;
       h2 {
         text-transform: uppercase;
         border-bottom: 4px solid $lawngreen;
-        /*max-width: 800px;*/
         width: 60%;
         padding-bottom: 15px;
         margin: -2px 130px;
@@ -61,22 +58,33 @@
       .accordion-block {
         text-align: center;
         width: 250px;
+        color: $nordic;
+        transition: color 250ms;
+        .icon-hover {
+          /*opacity: 0;*/
+          display: none;
+        }
         .accordion-button {
           text-align: center;
           font: normal normal bold 30px/30px "Exo 2";
-          color: $nordic;
           text-transform: uppercase;
           border-top: 3px solid;
           padding-top: 10px;
           margin-top: 10px;
-          &:hover {
-            color: $lawngreen;
+        }
+        &:hover {
+          color: $lawngreen;
+          & .icon-hover {
+            opacity: 1;
+            display: initial;
+          }
+          & .icon-content {
+            display: none;
           }
         }
       }
     }
     .teaser-right {
-      /*background: transparent linear-gradient(253deg, #002B36 0%, #031A20 100%) no-repeat;*/
       background: $nordic;
       width: 60%;
       font: normal normal 200 22px/30px "Exo 2";
@@ -143,9 +151,10 @@
     a {
       background: $nordic;
       .accordion-block {
-        .accordion-button {
+        color: white;
+       /* .accordion-button {
           color: white;
-        }
+        }*/
       }
     }
   }
@@ -459,7 +468,7 @@
 #benefit.project-block .ce_headline {
   transform: translateY(60px);
   padding-bottom: 10px;
-  font: normal normal 700 50px/52px "Exo 2";
+  font: normal normal 300 40px/52px "Exo 2";
   max-width: 355px;
 }
 
@@ -571,13 +580,6 @@
 }
 
 @media screen and (max-width: 1650px) {
- /*  .staff-item {
-    .figure {
-      figcaption {
-        height: 11%;
-      }
-    }
-  }*/
   .staff-item .figure figcaption {
     height: 11%;
   }
@@ -624,7 +626,7 @@
   #slider-headline.work .ce_headline, .work .ce_headline {
     transform: translateY(112px);
     max-width: 260px;
-    font: normal normal 200 28px/35px "Exo 2";
+    font: normal normal 200 26px/35px "Exo 2";
   }
   .work .ce_headline {
     transform: translateY(38px);
@@ -647,9 +649,6 @@
 }
 
 @media screen and (max-width: 1165px) {
-  .block.dunkelblau {
-    /*margin-top: -138px;*/
-  }
 
   .staff-item .figure figcaption {
     height: 16%;
@@ -662,7 +661,7 @@
 @media screen and (max-width: 1000px) {
   .work {
     .ce_headline {
-      font-size: 20px;
+      font-size: 26px;
       max-width: max-content;
       padding-bottom: 0;
       transform: translateY(37px);
@@ -678,7 +677,7 @@
   }
 
   .block.dunkelblau, .block.green {
-    margin-top: 0;
+   /* margin-top: 0;*/
     .wrapper-headline {
       & > div {
         width: 10%;
@@ -763,13 +762,17 @@
          padding: 5px 1rem;
          height: auto;
          border-radius: 0;
-         margin: 3px auto;
+         margin: -105px auto 0;
          .arrow {
            display: none;
          }
        }
      }
    }
+  }
+  .board .staff-item .figure figcaption p:nth-child(2) {
+    font-size: 28px;
+    line-height: 1px;
   }
 
   .work.history {
@@ -782,6 +785,7 @@
         clip-path: none;
       }
       .history-teaser {
+        padding-bottom: 45px;
         .ce_text {
           padding: 0;
           width: 90%;
@@ -824,7 +828,7 @@
   }
 
   #benefit.project-block .ce_headline {
-    font: normal normal 700 26px/30px "Exo 2";
+    font: normal normal 300 26px/30px "Exo 2";
     transform: translateY(75px);
   }
 
@@ -842,6 +846,14 @@
     p, a {
       font-size: 20px;
     }
+  }
+
+  #self-image .block.dunkelblau {
+    margin-top: -57px;
+  }
+
+  #benefit .project {
+    clip-path: polygon(99.861% 99.905%,0.139% 99.905%,0.139% 0.036%,17.561% 0.036%,17.561% 0.036%,17.795% 0.037%,18.026% 0.043%,18.255% 0.052%,18.481% 0.066%,18.702% 0.084%,18.917% 0.105%,19.127% 0.131%,19.33% 0.16%,19.526% 0.193%,19.713% 0.23%,19.713% 0.23%,19.889% 0.272%,20.054% 0.317%,20.208% 0.364%,20.351% 0.414%,20.482% 0.465%,20.601% 0.519%,20.708% 0.574%,20.801% 0.631%,20.882% 0.69%,20.949% 0.75%,24.463% 7.865%,76.165% 7.865%,79.051% 0.75%,79.051% 0.75%,79.118% 0.69%,79.199% 0.631%,79.293% 0.574%,79.399% 0.519%,79.518% 0.465%,79.649% 0.414%,79.792% 0.364%,79.946% 0.317%,80.112% 0.272%,80.288% 0.23%,80.288% 0.23%,80.475% 0.193%,80.67% 0.16%,80.873% 0.131%,81.083% 0.105%,81.299% 0.084%,81.52% 0.066%,81.745% 0.052%,81.974% 0.043%,82.206% 0.037%,82.44% 0.036%,99.863% 0.036%,99.863% 99.905%,99.861% 99.905%)
   }
 
 }

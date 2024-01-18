@@ -37,20 +37,17 @@ return array(
             'eval' => array('filesOnly' => true),
             'inputType' => 'fileTree'
         ),
+        'iconHover' => array(
+            'label' => array('Icon Akkordion Hover', 'Beschreibung...'),
+            'eval' => array('filesOnly' => true),
+            'inputType' => 'fileTree'
+        ),
         'icon' => array(
             'label' => array('Icon', 'Beschreibung...'),
             'eval' => array('filesOnly' => true),
             'inputType' => 'fileTree'
         ),
-      /*  'accordion_headline' => array(
-            'label' => array('Akkordion Überschrift'),
-            'inputType' => 'text',
-        ),
-        'accordion_teaser' => array(
-            'label' => array('Akkordion Content'),
-            'eval' => array('rte' => 'tinyMCE'),
-            'inputType' => 'textarea',
-        ),*/
+
         'accordion' => array(
             'inputType' => 'list',
             'label' => array('Akkordion', 'Rechts auf "Neues Element" klicken'),

@@ -96,6 +96,9 @@
             width: 665px;
           }
         }
+        &.mobile {
+          display: none;
+        }
       }
     }
   }
@@ -110,6 +113,9 @@
     .ce_text {
       font: normal normal 600 40px/54px "Exo 2";
     }
+  }
+  .footer-right {
+    margin-right: -30px;
   }
 }
 
@@ -150,6 +156,7 @@
       }
       .footer-right {
         margin-top: -55px;
+        margin-right: 0;
       }
     }
     .footer-teaser {
@@ -220,16 +227,23 @@
     .footer-bottom-wrapper .footer .footer-bottom {
       position: relative;
       bottom: 0;
-      .image_container img {
-        width: 450px;
+      &.desktop {
+        display: none;
+      }
+      &.mobile {
+        display: block;
+        bottom: 3px;
+        .image_container img {
+          width: 280px;
+        }
       }
     }
   }
 }
 
 @media screen and (max-width: 550px) {
-  #footer .footer-bottom-wrapper .footer .footer-bottom .image_container img {
-    width: 220px;
+  #footer .footer-bottom-wrapper .footer .footer-bottom.mobile .image_container img {
+    width: 185px;
   }
 
   #footer .footer-bottom-wrapper .footer .footer-middle .mod_customnav ul li strong {

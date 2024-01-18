@@ -50,6 +50,11 @@ return array(
             'eval' => array('filesOnly' => true),
             'inputType' => 'fileTree'
         ),
+        'iconHover' => array(
+            'label' => array('Icon Akkordion Hover', 'Beschreibung...'),
+            'eval' => array('filesOnly' => true),
+            'inputType' => 'fileTree'
+        ),
 
     )
 );

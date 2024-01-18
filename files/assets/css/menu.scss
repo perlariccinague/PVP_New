@@ -9,6 +9,7 @@
     margin: 0 auto;
     height: 200px;
     position: relative;
+    max-width: $max-width;
     .menu_left {
       background: url("/files/assets/layout/Logo_bg.svg") center top no-repeat;
       width: 455px;
@@ -34,9 +35,9 @@
       }
     }
     .menu-close {
-      right: 0;
+      right: -30px;
       position: absolute;
-      top: 100px;
+      top: 125px;
     }
   }
 }
@@ -47,12 +48,13 @@
     .menu-Navigation {
       width: 90%;
       margin: 9vw auto;
+      max-width: $max-width;
       .menu_block_wrapper {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         margin-top: 40px;
-        margin-left: 448px;
+        margin-left: 440px;
       }
     }
   }
@@ -60,13 +62,13 @@
 
 .menu_block_wrapper {
   .nav_left {
-    width: 30%;
+    width: 32%;
     .mod_navigation {
       ul {
         max-width: 350px;
         li {
           position: relative;
-          padding-bottom: 20px;
+          padding-bottom: 15px;
           margin-bottom: 20px;
           a {
             display: block;
@@ -143,7 +145,7 @@
 
 .menu_block_wrapper {
   .nav_right {
-    width: 67%;
+    width: 65%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -226,7 +228,7 @@
 
 @media screen and (max-width: 1500px) {
   .mobile_menu .inner .menu-Navigation {
-    margin: 0 auto;
+    margin: 11vw auto;
   }
   .menu_block_wrapper .nav_left .mod_navigation ul li strong.active {
     font-size: 20px;
@@ -234,17 +236,13 @@
 }
 
 @media screen and (max-width: 1150px) {
-  .mobile_menu .inner .menu-Navigation .menu_block_wrapper {
-    margin: 165px 0 0 137px;
-  }
- /* .menu_block_wrapper .nav_left .mod_navigation ul li strong.active {
-    font-size: 20px;
-  }*/
+
 }
 
 @media screen and (max-width: 1000px) {
   .mobile_menu .inner {
     .menu-Navigation {
+      margin: 60px auto;
       .menu_block_wrapper {
         margin-left: 0;
         .nav_left, .nav_right {
@@ -294,9 +292,9 @@
   }
 
   .inner .menu_top {
-   /* height: 230px;*/
     .menu-close {
       top: 170px;
+      right: 0;
       img {
         width: 50px;
       }

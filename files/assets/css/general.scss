@@ -137,22 +137,27 @@ a {
 
 @media screen and (max-width: 1000px) {
   .application {
-    margin-top: -50px;
+    margin-top: -65px;
     .border-raduis {
       border: 8px solid #012932;
-      /*img {
-        width: 70px;
-      }*/
       .teams-icon {
         width: 85px;
         height: 85px;
       }
     }
   }
+  .start .application {
+    margin-top: -55px;
+  }
   #progress {
     bottom: 25px;
     height: 60px;
     width: 60px;
-    transform: translateX(50%);
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  .without-spacing .application {
+    margin-top: -95px;
   }
 }

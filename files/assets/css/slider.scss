@@ -18,15 +18,15 @@
           color: white;
           font: normal normal normal 20px/30px "Exo 2";
           transform: translateX(-50%);
-          height: 115px;
+          height: 100px;
           width: 100%;
           background: #002B36;
           opacity: 0.75;
           .caption {
             border-bottom: 4px solid white;
-            padding-bottom: 12px;
+            padding-bottom: 7px;
             max-width: 860px;
-            margin: 15px auto;
+            margin: 10px auto;
           }
         }
       }
@@ -40,13 +40,15 @@
         right: 15%;
       }
       .slider-prev, .slider-next {
-        transform: translateY(-25vw);
+        /*transform: translateY(-25vw);*/
+        position: absolute;
+        top: -45vh;
         &:hover {
           filter: brightness(0) saturate(100%) invert(73%) sepia(61%) saturate(2380%) hue-rotate(22deg) brightness(104%) contrast(100%)
         }
       }
       .slider-menu {
-        transform: translateY(-15px);
+        transform: translateY(-17px);
         b {
           border: 2px solid white;
           margin: 0 5px;
@@ -354,16 +356,23 @@
     }
     .slider-control {
       .slider-prev, .slider-next {
-        transform: translateY(-340px);
+        /*transform: translateY(-340px);*/
         img {
           width: 50px;
+        }
+      }
+      .slider-menu {
+        transform: translateY(-12px);
+        b {
+          width: 14px;
+          height: 14px;
         }
       }
     }
   }
 
   #kk-slider {
-    clip-path: $clip-path-mobile;
+    clip-path: polygon(99.861% 99.905%, 0.139% 99.905%, 0.139% 0.036%, 17.561% 0.036%, 17.561% 0.036%, 17.795% 0.037%, 18.026% 0.043%, 18.255% 0.052%, 18.481% 0.066%, 18.702% 0.084%, 18.917% 0.105%, 19.127% 0.131%, 19.33% 0.16%, 19.526% 0.193%, 19.713% 0.23%, 19.713% 0.23%, 19.889% 0.272%, 20.054% 0.317%, 20.208% 0.364%, 20.351% 0.414%, 20.482% 0.465%, 20.601% 0.519%, 20.708% 0.574%, 20.801% 0.631%, 20.882% 0.69%, 20.949% 0.75%, 24.463% 7.865%, 76.165% 7.865%, 79.051% 0.75%, 79.051% 0.75%, 79.118% 0.69%, 79.199% 0.631%, 79.293% 0.574%, 79.399% 0.519%, 79.518% 0.465%, 79.649% 0.414%, 79.792% 0.364%, 79.946% 0.317%, 80.112% 0.272%, 80.288% 0.23%, 80.288% 0.23%, 80.475% 0.193%, 80.67% 0.16%, 80.873% 0.131%, 81.083% 0.105%, 81.299% 0.084%, 81.52% 0.066%, 81.745% 0.052%, 81.974% 0.043%, 82.206% 0.037%, 82.44% 0.036%, 99.863% 0.036%, 99.863% 99.905%, 99.861% 99.905%);
     height: 1200px;
   }
   .kk-slider-element {
@@ -382,7 +391,10 @@
        width: 50px;
      }
     }
+  }
 
+  #slider-headline.work {
+    margin: 20px auto;
   }
 }
 

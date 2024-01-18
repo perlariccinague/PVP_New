@@ -90,6 +90,9 @@
           strong {
             font-weight: 900;
           }
+          & .mobile-only {
+            display: none;
+          }
         }
       }
       &.fading {
@@ -201,7 +204,6 @@
             transform: translateX(calc(-100% + 39px));
             .header-right .header-logo {
               margin: 0;
-              /*padding: 0;*/
               transform: translateY(30%);
               img {
                 width: 130px;
@@ -218,6 +220,8 @@
                 width: 180px;
                 li {
                   font: normal normal 400 14px/17px "Exo 2";
+                  padding-right: 5px;
+                  margin-right: 5px;
                 }
               }
             }
@@ -227,7 +231,10 @@
               top: 13%;
               position: relative;
               h2 {
-                font: normal normal 400 20px/26px "Exo 2";
+                font: normal normal 900 24px/26px "Exo 2";
+                & .mobile-only {
+                  display: initial;
+                }
               }
             }
           }
@@ -278,14 +285,23 @@
       }
     }
   }
+  .start #header .inside .mod_article .header-bg {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 450px) {
   #header .inside .mod_article .header-contain .header-right-bg {
-    width: 195px;
+    width: 185px;
     right: -25px;
   }
   #header .inside .mod_article .header-contain .header-left .ce_text {
-    padding-left: 12px;
+    padding-left: 30px;
+  }
+  #header .inside .mod_article .header-contain .header-left {
+    width: 55%;
+  }
+  .start #header .inside .mod_article .header-contain .header-left .ce_text h2 {
+    font-size: 20px;
   }
 }
