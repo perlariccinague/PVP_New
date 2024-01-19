@@ -17,5 +17,13 @@
 {{insert_module::2}}
 
 
-
-
+<!--
+<div class="header-right mobile">
+    {{insert_content::1}}
+    <div class="header-mobile">
+        <div class="search">
+            {{insert_form::1}}
+        </div>
+        {{insert_module::2}}
+    </div>
+</div>-->

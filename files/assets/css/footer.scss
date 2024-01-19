@@ -232,9 +232,12 @@
       }
       &.mobile {
         display: block;
-        bottom: 3px;
-        .image_container img {
-          width: 280px;
+        bottom: -2px;
+        .image_container {
+          margin-bottom: 0;
+          img {
+            width: 280px;
+          }
         }
       }
     }
@@ -242,8 +245,13 @@
 }
 
 @media screen and (max-width: 550px) {
-  #footer .footer-bottom-wrapper .footer .footer-bottom.mobile .image_container img {
-    width: 185px;
+  #footer .footer-bottom-wrapper .footer .footer-bottom.mobile {
+    bottom: -1px;
+    .image_container {
+      img {
+        width: 175px;
+      }
+    }
   }
 
   #footer .footer-bottom-wrapper .footer .footer-middle .mod_customnav ul li strong {

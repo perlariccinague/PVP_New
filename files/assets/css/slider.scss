@@ -12,7 +12,7 @@
         }
         .caption-block {
           position: absolute;
-          bottom: 0;
+          bottom: 2px;
           text-align: center;
           left: 50%;
           color: white;
@@ -42,13 +42,15 @@
       .slider-prev, .slider-next {
         /*transform: translateY(-25vw);*/
         position: absolute;
-        top: -45vh;
+        top: -40vh;
         &:hover {
           filter: brightness(0) saturate(100%) invert(73%) sepia(61%) saturate(2380%) hue-rotate(22deg) brightness(104%) contrast(100%)
         }
       }
       .slider-menu {
         transform: translateY(-17px);
+        font-size: 0;
+        top: 2px;
         b {
           border: 2px solid white;
           margin: 0 5px;
@@ -96,106 +98,6 @@
   position: relative;
 }
 
-/*#slider-headline .ce_sliderStart {
-  .content-slider {
-    text-align: center;
-    transform: translate(-50%, -50%);
-    position: relative;
-    top: 45%;
-    left: 50%;
-  }
-}
-
-#slider-headline .ce_sliderStart {
-  position: relative;
-  background: $lawngreen;
-  height: 1280px;
-  margin: auto;
-  clip-path: $clip-path-contain;
-  .ce_image, .kk-slider-element {
-    background: transparent;
-    clip-path: none;
-    position: relative;
-    .description {
-      color: $nordic;
-      padding: 30px;
-      position: relative;
-      font: normal normal normal 24px/30px "Exo 2";
-      max-width: 375px;
-      border-radius: 30px;
-      border: 6px solid $nordic;
-      left: 50%;
-      top: 0;
-      z-index: 10;
-      background: $lawngreen;
-      transform: translate(10%, 35%);
-      text-align: left;
-      opacity: 1;
-      &:before, &:after {
-        position: absolute;
-        content: "";
-        width: 100px;
-        height: 85px;
-        background: $lawngreen url("/files/assets/layout/Pfad 218.svg") no-repeat center/50%;
-        box-sizing: border-box;
-      }
-      &:before {
-        left: -50px;
-        top: -40px
-      }
-      &:after {
-        right: -50px;
-        bottom: -45px;
-      }
-    }
-    img {
-      width: 540px;
-      height: 420px;
-      object-fit: cover;
-      position: relative;
-      border-radius: 20px;
-      opacity: 1;
-    }
-    .caption {
-      color: #002B36;
-      position: relative;
-      bottom: -5px;
-      text-align: center;
-      border-bottom: 4px solid #002B36;
-      padding-bottom: 10px;
-      max-width: 860px;
-      margin: 30px auto;
-      font: normal normal 400 20px/30px "Exo 2";
-    }
-  }
-  .slider-control {
-  .slider-prev {
-    left: 5%;
-  }
-    .slider-next{
-      right: 5%;
-    }
-    .slider-prev, .slider-next {
-      top: -270px;
-      position: absolute;
-      &:hover {
-        filter: brightness(0) saturate(100%) invert(90%) sepia(89%);
-      }
-    }
-    .slider-menu {
-      top: 180px;
-      b {
-        border: 2px solid $nordic;;
-        margin: 0 5px;
-        background: transparent;
-        transition: background-color 0.6s ease;
-        &.active {
-          background: $nordic;
-        }
-      }
-    }
-  }
-}*/
 
 #kk-slider {
   position: relative;
@@ -248,6 +150,7 @@
     &:after {
       right: -50px;
       bottom: -45px;
+      display: none;
     }
   }
   .image {
@@ -362,7 +265,7 @@
         }
       }
       .slider-menu {
-        transform: translateY(-12px);
+        transform: translateY(-6px);
         b {
           width: 14px;
           height: 14px;
@@ -394,20 +297,53 @@
   }
 
   #slider-headline.work {
-    margin: 20px auto;
+    margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 450px)  {
- /* #slider-headline .ce_headline {
-    max-width: 180px;
-    line-height: 28px;
-  }*/
-  .kk-slider-element {
-   .quote {
-     left: 13%;
-     top: -31%;
-   }
+  .galery .ce_sliderStart .slider-control .slider-prev img,
+  .galery .ce_sliderStart .slider-control .slider-next img {
+    display: none;
+  }
+
+  .slider {
+    height: 960px;
+    #kk-slider {
+      height: 1280px;
+      .kk-content-slider {
+        top: 28%;
+        .kk-slider-element {
+          .quote {
+            left: 32%;
+            top: -45%;
+            max-width: 200px;
+          }
+          .image {
+            left: -7%;
+            img {
+              width: 260px;
+              height: 300px;
+            }
+          }
+          .caption {
+            bottom: -55px;
+          }
+        }
+      }
+      .kk-slider-controls {
+        top: 53%;
+        .kk-slider-prev {
+          left: 35%;
+        }
+        .kk-slider-next {
+          right: 35%;
+        }
+        .dots {
+          bottom: -140px;
+        }
+      }
+    }
   }
 }
 

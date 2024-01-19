@@ -112,7 +112,19 @@
      background: $nordic;
      ul {
        li {
-         list-style: disc inside;
+         /*list-style: disc inside;*/
+         padding-left: 20px;
+         position: relative;
+         &:before {
+           content: "";
+           position: absolute;
+           left: 2px;
+           top: 15px;
+           width: 10px;
+           height: 10px;
+           background: url("/files/assets/layout/punkt.svg") no-repeat;
+           background-size: 6px;
+         }
        }
      }
    }

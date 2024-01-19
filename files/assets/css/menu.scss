@@ -293,7 +293,7 @@
 
   .inner .menu_top {
     .menu-close {
-      top: 170px;
+      top: 100px;
       right: 0;
       img {
         width: 50px;
@@ -314,11 +314,23 @@
     }
     .header-logo {
       img {
-        width: 150px;
+        width: 140px;
       }
     }
     .search {
       top: 110px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .inner .menu_top .menu-close {
+    top: 75px;
+  }
+  .inner .header-right-bg.mobile {
+    width: 157px;
+    .search {
+      top: 90px;
     }
   }
 }

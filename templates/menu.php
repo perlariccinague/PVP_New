@@ -14,6 +14,7 @@
             <div class="search">
                 {{insert_form::1}}
             </div>
+
         </div>
     </div>
     {{insert_module::19}}
