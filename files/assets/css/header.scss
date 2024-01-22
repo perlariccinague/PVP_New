@@ -13,13 +13,19 @@
   }
 }
 
-.start #header .inside .mod_article {
-  height: 400px;
+/*.start #header .inside .mod_article {
+  height: 330px;
   .header-bg {
     width: 87.3%;
   }
   .header-contain .header-right-bg {
-    transform: translateX(calc(-100% + -25px));
+    transform: translateX(calc(-100% + -14px));
+  }
+}*/
+.start #header .inside .mod_article .header-contain .header-left .ce_text {
+  max-width: 430px;
+  h2 {
+    font: normal normal 900 45px/47px "Exo 2";
   }
 }
 
@@ -47,7 +53,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
-    height: 35vh;
+    height: 23vh;
     .header-left {
       width: 42%;
       padding-left: 200px;
@@ -164,6 +170,9 @@
       transform: translateX(calc(-100% + 10px));
     }
   }
+  .start #header .inside .mod_article .header-contain .header-left .ce_text h2 {
+    font: normal normal 900 35px/40px "Exo 2";
+  }
 }
 
 @media screen and (max-width: 1250px) {
@@ -214,7 +223,7 @@
             background: white;
             right: -30px;
             background: url("/files/assets/layout/Gruppe 14-1.svg") center top 0/100% no-repeat;
-            transform: translateX(calc(-100% + 50px));
+            transform: translateX(calc(-100% + 40px));
             .header-right {
               transform: translateY(15px);
               .header-logo {
@@ -270,6 +279,9 @@
 
   .start #header .inside .mod_article {
     height: 210px;
+    .header-contain .header-left .ce_text h2 {
+      font: normal normal 900 24px/30px "Exo 2";
+    }
   }
 
   .start #header .inside .mod_article .header-contain .header-right-bg {
@@ -282,9 +294,7 @@
 
   .mod_mobile_menu.block {
     position: absolute;
-    /*right: 40px;
-    top: 115px;*/
-    right: 8px;
+    right: 15px;
     top: 90px;
     .mobile_menu_trigger {
       img {
@@ -321,7 +331,6 @@
         width: 158px;
         right: -25px;
         .header-right .search {
-         /* bottom: -24px;*/
           top: 68px;
           left: 40px;
           bottom: 0;
@@ -334,9 +343,7 @@
   }
 
   .mod_mobile_menu.block {
-  /*  top: 92px;
-    right: 25px;*/
-    right: 3px;
+    right: 10px;
     top: 70px;
   }
 
@@ -344,10 +351,10 @@
     padding-left: 30px;
   }
   #header .inside .mod_article .header-contain .header-left {
-    width: 55%;
+    width: 52%;
   }
   .start #header .inside .mod_article .header-contain .header-left .ce_text h2 {
-    font-size: 20px;
+    font-size: 19px;
   }
   .start #header .inside .mod_article {
     height: 175px;

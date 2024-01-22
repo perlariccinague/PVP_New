@@ -85,20 +85,21 @@
       margin: 0 auto;
       width: 100%;
       .benefits-box {
-        display: block;
+        display: flex;
         width: 225px;
         background-size: auto;
         margin: 10px auto;
+        flex-wrap: wrap;
+        align-items: center;
         .content {
           img {
             margin: 0 auto;
             display: flex;
             transform: translateY(0);
             top: 0;
-            padding: 50px 0 0;
-           /* &:last-child {
-              width: 60px;
-            }*/
+           /* padding: 50px 0 0;*/
+            width: 80px;
+            cursor: default;
           }
         }
         .content-hover {
@@ -106,15 +107,17 @@
           display: block;
           padding: 0 0;
           height: auto;
+          position: relative;
           h3 {
-            margin: 0 0;
+            /*margin: 0 0;*/
+            margin: -14px 0 0;
             font: normal normal 600 18px/28px "Exo 2";
           }
         }
       }
-      &:last-child > .benefits-box .content img, &:nth-last-child(2) > .benefits-box .content img, {
+    /*  &:last-child > .benefits-box .content img, &:nth-last-child(2) > .benefits-box .content img, {
         width: 60px;
-      }
+      }*/
     }
   }
 }
