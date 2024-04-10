@@ -101,6 +101,7 @@
     font: normal normal 400 22px/30px "Exo 2";
     display: block;
     border-radius: 30px;
+    resize: none;
     transition: background-color 250ms;
     &:hover {
       border:2px solid $lawngreen;
